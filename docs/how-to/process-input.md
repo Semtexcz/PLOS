@@ -6,42 +6,41 @@
 
 1. **Pojmenujte podnět jednou větou.** Co to je, od koho přišlo a proč to řešíte? Nevyjasněný podnět (Captured Input) není závazek (Commitment).
 2. **Zjistěte, zda vyžaduje jednání.** Informace, oznámení nebo inspirace bez požadavku jednání nevyžadují. Uzavřete je nebo uložte k pozdějšímu použití.
-3. **Ověřte, zda už závazek nebo projekt existuje.** Komu jste co slíbili a co už běží? Když ano, připojte podnět k existující věci; nový záznam vytvoří duplicitní práci nebo závazek ([INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15).
-4. **Rozhodněte, zda přijímáte odpovědnost.** Žádost, doporučení ani zápis závazek nevytváří ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)). Závazek vzniká přijetím odpovědnosti nebo existující povinností — slibem, rolí, dohodou. Když odpovědnost nepřijmete, jde o nezávaznou možnost s podmínkou návratu, nebo o odmítnutou žádost.
-5. **Určete cestu.** Když stačí jedna činnost, určete další krok (Next Action): co, kdy a za jakých podmínek. Když je potřeba sladit víc kroků, závislostí nebo lidí, jde o projekt (Project). Projekt i závazek mohou existovat samostatně ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
-6. **Ověřte, zda lze jednat nyní.** Když ano, začněte. Když ne, rozhodněte o odkladu s podmínkou, přejednání nebo odmítnutí.
-7. **Pojmenujte čekání a podmínku návratu.** Když jednání závisí na druhém člověku nebo vnější události, řekněte, na co čekáte a podle čeho poznáte čas návratu. U čekání, odkladu i možnosti napište, kdy se k věci vrátíte. Čekání není dokončení a odpovědnost trvá.
+3. **Ověřte, zda už věc existuje.** Komu jste co slíbili a co už běží? Když podnět souvisí s existujícím závazkem, projektem nebo krokem, připojte ho k téže věci a posuďte, co se změnilo: potřebujete nový další krok, čekáte na vnější událost, mění se plán, roste nárok na kapacitu, nebo je věc dokončená. Novou identitu ani druhou instanci práce nevytvářejte ([INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15); otázky shrnuje [Podněty, závazky a další kroky](../reference/commitment-workflow.md#co-mění-nový-podnět-u-existující-věci).
+4. **Rozhodněte, jak odpovídáte.** Máte čtyři možnosti: informace bez akce, odmítnutí nebo odložení s podmínkou návratu, přijetí odpovědnosti (závazek), nebo dobrovolné jednání bez závazku. Přijetí závazku není podmínkou jednání. Žádost ani doporučení závazek nevytváří ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)), ale smysluplnou činnost můžete udělat i bez něj.
+5. **Určete cestu.** Když stačí jedna činnost, určete další krok (Next Action): co, kdy a za jakých podmínek. Když je potřeba sladit víc kroků, závislostí nebo lidí, jde o projekt (Project). Projekt může existovat bez závazku, závazek bez projektu a povinnost bez formálního projektu ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+6. **Ověřte, zda lze jednat nyní.** Porovnejte nárok s dostupností. Když ano, začněte. Když ne, rozhodněte o čekání s podmínkou návratu, odkladu, přejednání nebo odmítnutí. Zařazení do plánu samo kapacitu nevytvoří.
+7. **Pojmenujte čekání a podmínku návratu.** Řekněte, na co čekáte a podle čeho poznáte čas návratu. Čekání samo odpovědnost nevytváří; u existujícího závazku odpovědnost trvá. Čekání není dokončení.
 
 ```mermaid
 flowchart TD
-    A["Nový podnět"] --> B{"Vyžaduje jednání?"}
-    B -->|"ne"| C["Informace bez akce"]
-    B -->|"ano"| D{"Už existuje závazek<br/>nebo projekt?"}
-    D -->|"ano"| E["Připoj k existujícímu"]
-    D -->|"ne"| F{"Přijímám odpovědnost?"}
-    F -->|"ne"| G["Možnost s podmínkou návratu<br/>nebo odmítnutí"]
-    F -->|"ano"| H{"Stačí jeden krok?"}
-    H -->|"ano"| I["Další krok"]
-    H -->|"ne"| J["Projekt a další krok"]
-    I --> K{"Čeká se na druhého?"}
-    J --> K
-    K -->|"ano"| L["Čekání s podmínkou návratu"]
-    K -->|"ne"| M["Jednat, nebo vědomě odložit"]
+    A["Nový podnět"] --> B{"Souvisí s existující<br/>věcí?"}
+    B -->|"ano"| C["Posuď existující věc"]
+    B -->|"ne"| D{"Jak odpovídám?"}
+    D -->|"informace"| E["Informace bez akce"]
+    D -->|"odmítnout nebo odložit"| F["Možnost nebo odmítnutí<br/>s podmínkou návratu"]
+    D -->|"přijmout odpovědnost"| G["Závazek"]
+    D -->|"jednat dobrovolně"| H["Dobrovolný krok<br/>nebo projekt"]
+    C --> I{"Proveditelné nyní?"}
+    G --> I
+    H --> I
+    I -->|"ano"| J["Jednat"]
+    I -->|"ne"| K["Čekání, odklad s podmínkou,<br/>nebo přejednání"]
 ```
 
-Obrázek 1 — Rozhodovací strom pro nový podnět. Zobrazuje pořadí otázek, ne povinný záznam ani automatické řízení. U existujícího závazku řešíte jeho naplnění, ne vznik nového.
+Obrázek 1 — Rozhodovací strom pro nový podnět. Zobrazuje pořadí otázek, ne povinný záznam ani automatické řízení. U existující věci posuzujete, co se změnilo, ne vznik nové práce. Přijetí odpovědnosti je jedna z možností odpovědi, ne podmínka jednání.
 
 ## Když je kapacita nízká
 
-Nerozhodujte o všem. Vyberte jednu věc: podnět jen zachyťte a vyjasněte později, udělejte nejmenší další krok, nebo odpovězte, že nyní nemůžete. Odmítnutí i odklad jsou platné volby. Nevyjasněný podnět patří do nejbližší reflexe, ne do dnešního plánu.
+Nerozhodujte o všem. Vyberte jednu věc: podnět jen zachyťte a vyjasněte později, udělejte nejmenší další krok, nebo odpovězte, že nyní nemůžete. Odmítnutí i odklad jsou platné volby. Dobrovolnou činnost odkládejte stejně vědomě jako závazek; odklad není zrušení. Nevyjasněný podnět patří do nejbližší reflexe, ne do dnešního plánu.
 
 ## Příklad
 
-Kolegyně se ptá, zda do pátku připravíte podklady pro její prezentaci. Nic takového jste jí neslíbili. Při současné kapacitě odpovíte, že to nestihnete, a nabídnete kratší rozsah. Žádost se uzavírá a závazek nevznikl. Kdybyste kratší rozsah přijali, vznikl by závazek s termínem a jedním dalším krokem.
+Kolegyně se ptá, zda do pátku připravíte podklady pro její prezentaci. Nic takového jste jí neslíbili. Při současné kapacitě odpovíte, že to nestihnete, a nabídnete kratší rozsah. Žádost se uzavírá a závazek nevznikl. Kdybyste kratší rozsah přijali, vznikl by závazek s termínem a jedním dalším krokem. Stejná žádost může skončit i dobrovolným krokem: pošlete odkaz na existující podklady, protože vás to stojí dvě minuty. Závazek ani projekt přitom nevzniká.
 
 ## Očekávaný výsledek
 
-- jeden výsledek: informace, možnost, existující nebo nový závazek, projekt, další krok, čekání, nebo odmítnutí,
+- jeden výsledek: informace, možnost, dobrovolný krok, existující nebo nový závazek, projekt, čekání, nebo odmítnutí,
 - u závazku předmět, původ a podmínka splnění či zániku, i částečná,
 - další krok nebo čekání s podmínkou návratu,
 - vědomé rozhodnutí, co se kvůli podnětu mění — často nic.
@@ -51,10 +50,12 @@ Kolegyně se ptá, zda do pátku připravíte podklady pro její prezentaci. Nic
 - **Nevíte, co podnět znamená:** zeptejte se odesílatele. Neúplná informace je přípustná; neznámý stav není splnění ani zrušení ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 - **Podnětů je mnoho:** vyjasněte je najednou v krátkém bloku, ne každý okamžitě.
 - **Závazek se nedá splnit:** navrhněte změnu dotčenému člověku. Změna plánu sama závazek neruší ([INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+- **Podnět se týká věci, kterou považujete za uzavřenou:** ověřte, zda práce nebo povinnost skutečně skončila. Nejasný stav není dokončení ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 - **Podnět je strategická možnost:** jde do portfolia jako kandidát, ne do dnešní práce.
 
 ## Související
 
 - [Denní rozhodování](daily-review.md) — jak podnět zapadne do dne.
+- [Řízení rozpracované práce](manage-workflow.md) — jak vybranou práci zahájit, nechat běžet nebo uvolnit.
 - [Týdenní plánování](weekly-planning.md) — kde se vyjasňují otevřené podněty a kapacita.
 - [Podněty, závazky a další kroky](../reference/commitment-workflow.md) — přesná pravidla a invarianty.

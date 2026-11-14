@@ -1,6 +1,6 @@
 # Podněty, závazky a další kroky
 
-**Typ dokumentu:** reference • **Stav:** návrh pro Iteration 3C.1; provozní pohled na [SS-03](../../03-architecture/conceptual-architecture.md#ss-03--goal--portfolio-management) až [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation), nikoli nová architektura • **Rozsah:** vyjasnění podnětu, možné výsledky a návaznost na existující doménu
+**Typ dokumentu:** reference • **Stav:** návrh pro Iteration 3C.2; provozní pohled na [SS-03](../../03-architecture/conceptual-architecture.md#ss-03--goal--portfolio-management) až [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation), nikoli nová architektura • **Rozsah:** vyjasnění podnětu, možné výsledky, čekání, kapacitní nároky a návaznost na existující doménu
 
 Pravidla vyjasnění. Definice obsahuje [GLO-01](../../glossary.md), vztahy a invarianty [DOM-01](../../03-architecture/preliminary-domain-model.md). Postup popisuje [Zpracování nového podnětu](../how-to/process-input.md).
 
@@ -14,11 +14,13 @@ Vstupem je zachycený podnět (Captured Input): žádost, informace, nápad, sig
 | --- | --- | --- |
 | Neakční informace | Uzavřený nebo uložený obsah | Závazek, projekt ani krok |
 | Nezávazná možnost | Kandidát s podmínkou návratu | Nárok na kapacitu ani aktivní práce |
-| Existující závazek nebo projekt | Odkaz na tutéž věc | Nová identita ani duplicitní závazek |
+| Existující závazek nebo projekt | Odkaz na tutéž věc a posouzení změny | Nová identita ani duplicitní závazek |
 | Nový závazek | Odpovědnost s předmětem, původem a podmínkami | Automatický projekt, termín ani alokace |
-| Projekt | Koordinace práce s kritériem dokončení | Závazek, cíl ani nárok na kapacitu |
+| Projekt | Koordinace práce s kritériem dokončení | Závazek, cíl ani alokace kapacity |
+| Dobrovolný další krok | Jednorázová činnost bez závazku a projektu | Odpovědnost ani alokace kapacity |
 | Další krok | Konkrétní jednání s časem nebo podmínkou | Dokončení závazku ani projektu |
-| Čekání | Závislost s podmínkou návratu | Dokončení ani zrušení odpovědnosti |
+| Čekání u existující práce | Závislost s podmínkou návratu | Dokončení ani zrušení odpovědnosti |
+| Nezávazné čekání | Sledovaná informace s podmínkou návratu | Odpovědnost ani alokace kapacity |
 | Odmítnutí nebo zánik | Ukončená záležitost s důvodem | Zrušení odpovědnosti, která trvá jinde |
 
 Výsledky jsou přípustné možnosti, ne povinný katalog. Jeden podnět může vyústit ve víc výsledků, například v závazek a projekt.
@@ -26,20 +28,54 @@ Výsledky jsou přípustné možnosti, ne povinný katalog. Jeden podnět může
 ## Podnět, závazek, projekt a další krok
 
 - **Podnět** je nevyjasněný obsah. **Závazek** je rozpoznaná odpovědnost. **Projekt** je organizace práce s rozpoznatelným dokončením. **Další krok** je konkrétní jednání, přímo proveditelné za známých podmínek.
-- Závazek nepotřebuje projekt ani cíl; projekt může existovat bez závazku; krok nemusí patřit k projektu ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+- Závazek nepotřebuje projekt ani cíl; projekt může existovat bez závazku; krok nemusí patřit k projektu ani mít závazek ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)). Přijetí odpovědnosti není podmínkou každého jednání.
 - Projekt nevzniká z počtu kroků, ale z potřeby koordinovat rozsah nebo závislosti.
 - Žádost, doporučení, výběr ani zařazení do plánu závazek nevytváří ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)). Vzniká přijetím odpovědnosti nebo existující povinností.
 
-## Čekání, odklad, dokončení a zánik
+## Co mění nový podnět u existující věci
+
+Když podnět souvisí s existujícím závazkem, projektem nebo krokem, zůstává stejná identita práce. Vyjasnění nekončí odkazem; posoudí, co se změnilo:
+
+- **Nový další krok:** dosavadní krok nestačí, je hotový, nebo se změnily podmínky.
+- **Čekání:** rozhodnutí závisí na druhém člověku nebo vnější události.
+- **Změna plánu:** dosavadní pořadí, rozsah nebo horizont už neodpovídá.
+- **Změna nároku:** nová informace mění potřebu zdroje; kapacitu to samo nepřidá.
+- **Dokončení nebo zánik:** práce je hotová, nebo povinnost platně skončila.
+
+Když se nezmění nic, je to platný výsledek. Nový záznam vzniká jen tehdy, když jde o jinou práci s jiným původem ([INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15).
+
+## Čekání a kapacitní nároky
+
+| Situace | Co znamená | Co platí dál |
+| --- | --- | --- |
+| Čekání u existujícího závazku | Práce je zahájena, podklad nebo rozhodnutí přijde od druhého | Odpovědnost trvá; čekání není dokončení |
+| Čekání v dobrovolném projektu | Projekt existuje bez závazku a čeká na podnět | Odpovědnost nevzniká; rozhodněte, zda projekt ponechat |
+| Nezávazné čekání na informaci | Sledujete oznámení nebo odpověď, nic jste nepřislíbili | Žádná odpovědnost ani nárok; lze kdykoli ukončit |
+| Blokovaný další krok | Krok nelze provést za současných podmínek | Hledejte krok nezávislý na překážce; blokace není dokončení |
+
+Čekání samo odpovědnost nevytváří. Odpovědnost vzniká přijetím nebo existující povinností ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)). U čekání vždy uveďte podmínku návratu: podle čeho poznáte, že lze pokračovat. Odklad, dokončení a zánik jsou samostatná rozhodnutí.
+
+## Odklad, dokončení a zánik
 
 | Situace | Co se děje | Co platí dál |
 | --- | --- | --- |
-| Čekání | Jednání závisí na druhém nebo vnější události | Odpovědnost a podmínka návratu; čekání není dokončení |
 | Odklad | Vědomé rozhodnutí odložit provedení s důvodem | Odpovědnost trvá; odklad je samostatné rozhodnutí |
 | Dokončení | Předmět je splněn a doložen pozorováním | Závazek může skončit; práce nedokládá zamýšlený výsledek ([INV-05](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)) |
 | Zánik | Platné přejednání, souhlas protistrany nebo jiný skutečný konec povinnosti | Odpovědnost končí; úmysl ani změna plánu nestačí ([INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)) |
 
-Čekání na odpověď není dokončení. Dokud nedorazí odpověď nebo jiná rozhodná událost, odpovědnost trvá; podmínka návratu je součástí vyjasnění. Neznámý stav není dokončený ani zrušený ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+Neznámý stav není dokončený ani zrušený ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+
+## Zdrojový nárok, kapacita a alokace
+
+Tři významy se nesmějí slučovat ([INV-12](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)):
+
+- **Zdrojový nárok** je potřeba zdroje vyvolaná rozsahem práce v horizontu a kontextu. Vzniká i tehdy, když práce neběží.
+- **Kapacita** je dostupnost zdroje. Neznámá dostupnost není neomezená ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+- **Alokace** je rozhodnutí zdroj pro nárok vyčlenit. Alokace není slib ani skutečnost; nárok může zůstat nepokrytý.
+
+Projekt může mít nenulový nárok, i když není aktivní nebo nemá přidělenou kapacitu. Neaktivita nespotřebovává plánovanou kapacitu a neznamená, že nárok zanikl. Vyšší priorita ani zařazení do plánu kapacitu nevytvoří; neslučitelné nároky zůstávají konfliktem ([INV-16](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+
+Rozpracovanost je odvozený pohled na zahájenou práci, ne alokace. Podrobnosti obsahuje [Výběr práce a WIP](work-selection-and-wip.md).
 
 ## Identita a odpovědnost
 
@@ -60,11 +96,14 @@ Portfolio ani plán nevytváří druhou evidenci; strategická možnost sama nes
 
 ## Invarianty
 
-- [INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — zachycení ani doporučení nevytváří závazek.
+- [INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — zachycení ani doporučení nevytváří závazek; čekání samo také ne.
 - [INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15 — více pohledů nezakládá novou identitu ani dvojí započtení.
+- [INV-05](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — dokončení práce nedokládá zamýšlený výsledek.
 - [INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — změna plánu, projektu či strategie závazek neruší.
 - [INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — závazek, projekt a krok jsou vzájemně volitelné.
 - [INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — neznámé není dokončené, zrušené ani nula.
+- [INV-12](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — nárok, kapacita, alokace a spotřeba jsou odlišné významy.
+- [INV-16](../../03-architecture/preliminary-domain-model.md#katalog-invariantů) — změna priority neprohlásí neslučitelné nároky za proveditelné.
 
 ## Výjimky a neúplné informace
 
@@ -76,7 +115,7 @@ Portfolio ani plán nevytváří druhou evidenci; strategická možnost sama nes
 
 ## Meze
 
-Text nezavádí nové entity, povinné stavy ani univerzální workflow engine. Nepředepisuje zápis, aplikaci ani databázi. Pojmenování výsledků je popis možností, ne katalog. Otevřené zůstávají [OQ-02](../../05-decisions/open-questions.md#otevřené-otázky) a [OQ-03](../../05-decisions/open-questions.md#otevřené-otázky).
+Text nezavádí nové entity, povinné stavy ani univerzální workflow engine. Nepředepisuje zápis, aplikaci ani databázi. Pojmenování výsledků je popis možností, ne katalog. Nevzniká univerzální WIP limit ani druhý plánovací proces. Otevřené zůstávají [OQ-02](../../05-decisions/open-questions.md#otevřené-otázky) a [OQ-03](../../05-decisions/open-questions.md#otevřené-otázky).
 
 ## Autoritativní zdroje
 

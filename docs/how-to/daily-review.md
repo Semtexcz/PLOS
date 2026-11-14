@@ -5,7 +5,7 @@
 ## Postup
 
 1. **Přečtěte si, co dnes platí (1 minuta).** Projděte závazky s dnešním termínem nebo dopadem na druhé. Zkontrolujte, zda se něco nezměnilo. Co přestanete sledovat, nezaniká.
-2. **Zvolte jednu věc (1 minuta).** Vyberte, co je dnes nejdůležitější, a řekněte si proč. „Protože to čeká kolegyně“ je důvod. „Protože bych měl“ není rozhodnutí.
+2. **Zvolte jednu věc (1 minuta).** Vyberte, co je dnes nejdůležitější, a řekněte si proč. „Protože to čeká kolegyně“ je důvod. „Protože bych měl“ není rozhodnutí. Když už něco běží, rozhodněte se vědomě mezi pokračováním a zahájením nové práce.
 3. **Ověřte kapacitu (1 minuta).** Porovnejte zvolenou věc se skutečným časem a energií. Když se to nevejde, zmenšete rozsah nebo něco odložte. Priorita nepřidá hodinu.
 4. **Určete další krok (1 minuta).** Napište jednu konkrétní činnost s časem nebo podmínkou. „Ve 14:00 zavolám a domluvím termín“ je krok. „Vyřešit telefonáty“ není.
 5. **Ukončete den (1 minuta).** Věnujte minutu tomu, co se skutečně stalo. Stačí věta: co vyšlo, co se změnilo, co zůstalo. Nic nedoplňujte zpětně.
@@ -40,5 +40,6 @@ Odpovězte si je kdykoli během dne, klidně ústně. Minulost nerekonstruujte. 
 
 - [Týdenní plánování](weekly-planning.md) — když se konflikt nevyřeší během dne.
 - [Zpracování nového podnětu](process-input.md) — když přijde nová žádost, informace nebo nápad.
+- [Řízení rozpracované práce](manage-workflow.md) — volba mezi pokračováním a novou prací.
 - [První týden s PLOS](../tutorials/first-week.md) — pokud začínáte.
 - [Provozní jádro](../reference/operational-kernel.md) — pravidla, ze kterých postup vychází.
