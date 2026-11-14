@@ -37,8 +37,8 @@ flowchart LR
 
 ## Prvky a vztahy
 
-Reference nejsou jediný číselný setpoint. Pozorování je omezené a interpretace není kauzální důkaz. FB-01, FB-02 a FB-03 mění odlišné objekty; FB-04 mění způsob používání metodiky. Všechny cesty od doporučení ke změně vedou přes člověka. Rytmy jsou v ARCH-01; událost může vyvolat revizi kdykoli.
+Reference nejsou jediný číselný setpoint. Pozorování je omezené a interpretace není kauzální důkaz. [FB-01](../03-architecture/conceptual-architecture.md#zpětnovazební-architektura), [FB-02](../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) a [FB-03](../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) mění odlišné objekty; [FB-04](../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) mění způsob používání metodiky. Všechny cesty od doporučení ke změně vedou přes člověka. Rytmy jsou v [ARCH-01](../03-architecture/conceptual-architecture.md); událost může vyvolat revizi kdykoli.
 
 ## Předpoklady a omezení
 
-Vliv volby na život je částečný a nejistý. Nezobrazuje se přenosová funkce, veličiny regulátoru ani důkaz stability. Model neznamená, že smyčky vždy proběhnou nebo že každé pozorování vyvolá změnu. Zpoždění účinků a riziko nadměrného přeplánování zůstávají OQ-02/OQ-05 a R-06.
+Vliv volby na život je částečný a nejistý. Nezobrazuje se přenosová funkce, veličiny regulátoru ani důkaz stability. Model neznamená, že smyčky vždy proběhnou nebo že každé pozorování vyvolá změnu. Zpoždění účinků a riziko nadměrného přeplánování zůstávají [OQ-02](../05-decisions/open-questions.md#otevřené-otázky)/[OQ-05](../05-decisions/open-questions.md#otevřené-otázky) a [R-06](../05-decisions/open-questions.md#rizika-návrhu).

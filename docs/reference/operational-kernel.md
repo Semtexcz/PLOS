@@ -1,6 +1,6 @@
 # Provozní jádro PLOS
 
-**Typ dokumentu:** reference • **Stav:** návrh pro Iteration 3A; podklad k revizi vlastníkem, nikoli schválená architektura • **Rozsah:** provozní pohled na SS-01 až SS-06
+**Typ dokumentu:** reference • **Stav:** návrh pro Iteration 3A; podklad k revizi vlastníkem, nikoli schválená architektura • **Rozsah:** provozní pohled na [SS-01](../../03-architecture/conceptual-architecture.md#ss-01--values--vision-management) až [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation)
 
 Provozní jádro popisuje pět funkcí, které člověk potřebuje k běžnému rozhodování: orientaci, výběr, kapacitu, realizaci a adaptaci. Není to nový subsystém ani nový doménový model. Je to zjednodušený pohled na existující odpovědnosti a významy.
 
@@ -9,7 +9,7 @@ Uživatel nemusí znát všechny doménové pojmy ani jejich anglické názvy, a
 ## Co jádro je a co není
 
 - Je to nejmenší sada otázek a výstupů, která umožní rozhodnout se a jednat.
-- Je to návrh provozního postupu k ověření, nikoli závazná architektura. Závazné zůstávají definice GLO-01, vztahy a invarianty DOM-01 a odpovědnosti ARCH-01.
+- Je to návrh provozního postupu k ověření, nikoli závazná architektura. Závazné zůstávají definice [GLO-01](../../glossary.md), vztahy a invarianty [DOM-01](../../03-architecture/preliminary-domain-model.md) a odpovědnosti [ARCH-01](../../03-architecture/conceptual-architecture.md).
 - Není to povinný postup pro každodenní použití ani pět samostatných evidencí.
 - Není to algoritmus priorit, model stavů ani návrh aplikace.
 
@@ -36,7 +36,7 @@ Obrázek 1 — Pět funkcí a tři zpětné vazby. Šipky popisují návaznost r
 | Realizace | Zvolený rozsah, další kroky, aktuální kontext a energie | Jaký je další konkrétní krok a jeho podmínky? Jednat, odpočívat, nebo rozhodnout? | Provedený krok nebo vědomá volba nejednat; pozorování; nový krok |
 | Adaptace | Pozorování, původní zamýšlené výsledky, nejistoty, subjektivní zkušenost | Co se stalo? Co z toho vyvozuji a co nevím? Co změnit? | Pozorování oddělené od interpretace, jedno rozhodnutí, podněty pro orientaci a výběr |
 
-Funkce vycházejí z existujících odpovědností: Orientace ze SS-01 a SS-03, ve strategickém rozsahu také SS-02; Výběr ze SS-03; Kapacita ze SS-04; Realizace ze SS-05; Adaptace ze SS-06. Toto mapování je provozní zkratka, ne nová alokace odpovědností.
+Funkce vycházejí z existujících odpovědností: Orientace ze [SS-01](../../03-architecture/conceptual-architecture.md#ss-01--values--vision-management) a [SS-03](../../03-architecture/conceptual-architecture.md#ss-03--goal--portfolio-management), ve strategickém rozsahu také [SS-02](../../03-architecture/conceptual-architecture.md#ss-02--strategy--experimentation); Výběr ze [SS-03](../../03-architecture/conceptual-architecture.md#ss-03--goal--portfolio-management); Kapacita ze [SS-04](../../03-architecture/conceptual-architecture.md#ss-04--planning--capacity-management); Realizace ze [SS-05](../../03-architecture/conceptual-architecture.md#ss-05--execution--commitment-management); Adaptace ze [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation). Toto mapování je provozní zkratka, ne nová alokace odpovědností.
 
 ## Návaznost a volitelnost
 
@@ -49,16 +49,16 @@ Funkce vycházejí z existujících odpovědností: Orientace ze SS-01 a SS-03, 
 
 ## Rozhodovací pravidla
 
-1. Závazek nevzniká zápisem na seznam, doporučením ani zařazením do plánu. Vzniká přijetím odpovědnosti nebo existující povinností (INV-02).
-2. Priorita nepřidává čas ani energii. Neslučitelné nároky zůstanou konfliktem, dokud se nezmění rozsah, podmínky nebo dostupnost (INV-16).
-3. Plán je revidovatelná hypotéza. Skutečnost se nepřepisuje a změna plánu není důkaz splnění (INV-04).
-4. Neznámé zůstává neznámé. Neznámý údaj není nula, neomezenost ani prokázané splnění (INV-11).
-5. Nesouměřitelné zdroje se nesčítají. Bez společné jednotky a horizontu lze mluvit o omezení, ne o součtu (INV-13).
-6. Souhrnný nárok (Resource Demand) a jeho části se v jednom posouzení nepočítají dvakrát (INV-14, INV-15).
-7. Dokončená práce neprokazuje dosažení zamýšleného výsledku (INV-05).
-8. Změna směru, cíle, projektu ani plánu sama neruší závazek (INV-06).
-9. Nevyplněná kapacita je platný výsledek. Odpočinek nepotřebuje projekt ani zdůvodnění (ADR-04).
-10. Odmítnutí doporučení je platné rozhodnutí (P1).
+1. Závazek nevzniká zápisem na seznam, doporučením ani zařazením do plánu. Vzniká přijetím odpovědnosti nebo existující povinností ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+2. Priorita nepřidává čas ani energii. Neslučitelné nároky zůstanou konfliktem, dokud se nezmění rozsah, podmínky nebo dostupnost ([INV-16](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+3. Plán je revidovatelná hypotéza. Skutečnost se nepřepisuje a změna plánu není důkaz splnění ([INV-04](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+4. Neznámé zůstává neznámé. Neznámý údaj není nula, neomezenost ani prokázané splnění ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+5. Nesouměřitelné zdroje se nesčítají. Bez společné jednotky a horizontu lze mluvit o omezení, ne o součtu ([INV-13](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+6. Souhrnný nárok (Resource Demand) a jeho části se v jednom posouzení nepočítají dvakrát ([INV-14](../../03-architecture/preliminary-domain-model.md#katalog-invariantů), [INV-15](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+7. Dokončená práce neprokazuje dosažení zamýšleného výsledku ([INV-05](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+8. Změna směru, cíle, projektu ani plánu sama neruší závazek ([INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+9. Nevyplněná kapacita je platný výsledek. Odpočinek nepotřebuje projekt ani zdůvodnění ([ADR-04](../../05-decisions/decision-log.md#adr-04--vícezdrojová-kapacita-bez-univerzálního-skóre-priorit)).
+10. Odmítnutí doporučení je platné rozhodnutí ([P1](../../01-foundations/design-principles.md)).
 
 ## Nedostatek kapacity
 
@@ -76,13 +76,13 @@ Nedělejte toto: nezvyšujte prioritu místo snížení rozsahu, neslibujte dohn
 
 - Závazky platí dál, i když je přestanete sledovat. Přestat sledovat není splnit.
 - Na začátku Orientace a Kapacity zkontrolujte závazky s blízkým termínem nebo dopadem na druhé.
-- Odklad provedení závazku je samostatné rozhodnutí s důvodem. Změna projektu, cíle či strategie ho neruší (INV-06).
+- Odklad provedení závazku je samostatné rozhodnutí s důvodem. Změna projektu, cíle či strategie ho neruší ([INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 - Závazek může skončit splněním, platným přejednáním nebo jiným skutečným zánikem odpovědnosti. Samotný úmysl nestačí.
-- Běžný závazek nepotřebuje strategický cíl ani projekt (INV-07).
+- Běžný závazek nepotřebuje strategický cíl ani projekt ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
 ## Tři úrovně používání
 
-Úrovně jsou **návrhové hypotézy**, nikoli schválená architektura. Nejde o totéž jako provozní režimy OP-01 až OP-07 v ConOps: „režim“ tam označuje situaci a účel, „úroveň používání“ zde označuje rozsah provozního jádra.
+Úrovně jsou **návrhové hypotézy**, nikoli schválená architektura. Nejde o totéž jako provozní režimy [OP-01](../../01-foundations/concept-of-operations.md) až [OP-07](../../01-foundations/concept-of-operations.md) v ConOps: „režim“ tam označuje situaci a účel, „úroveň používání“ zde označuje rozsah provozního jádra.
 
 | Úroveň | Kdy ji použít | Funkce a rozsah | Typický čas | Co nevyžaduje |
 | --- | --- | --- | --- | --- |
@@ -112,14 +112,14 @@ Tabulka uvádí, kde se framework přirozeně uplatní. Neznamená, že PLOS př
 
 ## Meze a otevřené otázky
 
-- Jádro neobsahuje algoritmus priorit, číselné limity, metriky ani stavové automaty. Ty patří do pozdějších kroků (OQ-01, OQ-02, OQ-03).
-- Sdílení, delegace a přístup dalších osob nejsou navrženy (OQ-07).
+- Jádro neobsahuje algoritmus priorit, číselné limity, metriky ani stavové automaty. Ty patří do pozdějších kroků ([OQ-01](../../05-decisions/open-questions.md#otevřené-otázky), [OQ-02](../../05-decisions/open-questions.md#otevřené-otázky), [OQ-03](../../05-decisions/open-questions.md#otevřené-otázky)).
+- Sdílení, delegace a přístup dalších osob nejsou navrženy ([OQ-07](../../05-decisions/open-questions.md#otevřené-otázky)).
 - Jádro je vykonatelné bez softwaru a bez záznamu. Zápis může rozhodování podpořit, ale není podmínkou.
 
 ## Autoritativní zdroje
 
 - [GLO-01 — slovník](../../glossary.md): definice pojmů Commitment, Next Action, Capacity, Review a dalších.
 - [DOM-01 — doménový model](../../03-architecture/preliminary-domain-model.md): identita, vztahy a invarianty.
-- [ARCH-01 — konceptuální architektura](../../03-architecture/conceptual-architecture.md): odpovědnosti SS-01 až SS-06.
-- [CO-01 — Concept of Operations](../../01-foundations/concept-of-operations.md): provozní režimy OP-01 až OP-07.
-- [ADR — rozhodnutí](../../05-decisions/decision-log.md): ADR-03, ADR-04 a ADR-10.
+- [ARCH-01 — konceptuální architektura](../../03-architecture/conceptual-architecture.md): odpovědnosti [SS-01](../../03-architecture/conceptual-architecture.md#ss-01--values--vision-management) až [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation).
+- [CO-01 — Concept of Operations](../../01-foundations/concept-of-operations.md): provozní režimy [OP-01](../../01-foundations/concept-of-operations.md) až [OP-07](../../01-foundations/concept-of-operations.md).
+- [ADR — rozhodnutí](../../05-decisions/decision-log.md): [ADR-03](../../05-decisions/decision-log.md#adr-03--revidovatelná-kadence-a-kontinuita-při-změně), [ADR-04](../../05-decisions/decision-log.md#adr-04--vícezdrojová-kapacita-bez-univerzálního-skóre-priorit) a [ADR-10](../../05-decisions/decision-log.md#adr-10--woop-pomocí-významových-rolí-a-experiment-bez-povinného-projektu).

@@ -33,8 +33,8 @@ flowchart LR
 
 ## Prvky a vztahy
 
-Levé uzly jsou zdrojové frameworky, pravé logické SS. Šipka znamená **příspěvek použitý v návrhu PLOS**. Nepředstavuje závislost programu, výlučnou kompetenci frameworku ani tvrzení o úplné implementaci jeho původní podoby. Přidělení je rozhodnutí PLOS; zdrojové principy jsou doloženy v FW-01.
+Levé uzly jsou zdrojové frameworky, pravé logické SS. Šipka znamená **příspěvek použitý v návrhu PLOS**. Nepředstavuje závislost programu, výlučnou kompetenci frameworku ani tvrzení o úplné implementaci jeho původní podoby. Přidělení je rozhodnutí PLOS; zdrojové principy jsou doloženy v [FW-01](../03-architecture/framework-integration.md).
 
 ## Předpoklady a omezení
 
-Mapování nezobrazuje obecné SE/MBSE postupy, které jsou metodou návrhu celého systému. ACT ani GTD se původně neomezují jen na zde přidělené funkce. WOOP má i zkušenostní složku; samotný plán reakce ji nenahrazuje. H-01 až H-05 zůstávají neověřené.
+Mapování nezobrazuje obecné SE/MBSE postupy, které jsou metodou návrhu celého systému. ACT ani GTD se původně neomezují jen na zde přidělené funkce. WOOP má i zkušenostní složku; samotný plán reakce ji nenahrazuje. [H-01](../05-decisions/open-questions.md#návrhové-hypotézy) až [H-05](../05-decisions/open-questions.md#návrhové-hypotézy) zůstávají neověřené.

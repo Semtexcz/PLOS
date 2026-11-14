@@ -7,7 +7,7 @@
 | ID | Pojem | Význam v PLOS | Nezaměňovat s |
 | --- | --- | --- | --- |
 | DC-01 | Value / Hodnota | Člověkem volená kvalita či směr jednání, který lze žít průběžně. | Dokončitelným cílem či skóre osoby. |
-| DC-02 | Personal Principle / Osobní princip | Přijaté, revidovatelné vodítko člověka pro opakované rozhodování. | Architektonickými P1–P11. |
+| DC-02 | Personal Principle / Osobní princip | Přijaté, revidovatelné vodítko člověka pro opakované rozhodování. | Architektonickými [P1](01-foundations/design-principles.md)–[P11](01-foundations/design-principles.md). |
 | DC-03 | Life Area / Životní oblast | Trvající kontext života pro rozlišování potřeb péče a změn; oblasti se mohou překrývat. | Projektem či povinnou taxonomií života. |
 | DC-04 | Care Need / Potřeba péče | Rozpoznaná potřeba udržování či obnovování podmínek života, nezávislá na volbě konkrétního způsobu péče. | Automatickým závazkem, úkolem nebo cílem zlepšování. |
 | DC-05 | Vision / Vize | Revidovatelná představa žádoucího celkového směru života. | Předpovědí nebo závazným plánem. |
@@ -47,16 +47,16 @@
 
 **Outcome / Výsledek** z v0.1 zůstává pouze souhrnným názvem rodiny významů, bez samostatné identity a dalšího DC. V každém tvrzení se určí Intended Outcome nebo Observed Outcome. Zamýšlený obsah a jeho pozorování jsou různé sémantické koncepty, nikoli zaměnitelné stavy jedné položky. Experimentální „výsledek“ se rozlišuje na Observation a Interpretation. „Skutečné provedení / spotřeba“ je předmět Observation, nikoli nový druh plánu.
 
-WOOP **Wish** je role zvoleného záměru (Objective, Care Need nebo konkrétního záměru jednání); **Outcome** je Intended Outcome vyjadřující očekávaný přínos tohoto přání; **Obstacle** je Internal Obstacle a **Plan** je Conditional Response. Nejde o další čtyři identity ani automatické zavedení Objective pro péči. Přesné vazby a omezení jsou v DOM-01.
+WOOP **Wish** je role zvoleného záměru (Objective, Care Need nebo konkrétního záměru jednání); **Outcome** je Intended Outcome vyjadřující očekávaný přínos tohoto přání; **Obstacle** je Internal Obstacle a **Plan** je Conditional Response. Nejde o další čtyři identity ani automatické zavedení Objective pro péči. Přesné vazby a omezení jsou v [DOM-01](03-architecture/preliminary-domain-model.md).
 
 „Úkol“ je neformální výraz; místo něj se rozlišuje Commitment a Next Action. „Nárok“ znamená DC-31, pokud jde o zdroj; „taktika“ 12 Week Year podle kontextu znamená krok, rutinu nebo dílčí plán. „Evidence“ znamená dostupný podklad poznání nebo orientace; není synonymem úložiště a nemusí být úplná ani zapsaná. Zdroj, horizont, kontext a jednotka jsou významové kvalifikátory, ne další povinné objekty.
 
 | Pojem mimo katalog domény | Význam |
 | --- | --- |
-| Design Principle / Návrhový princip | Pravidlo návrhu metodiky, zde P1–P11; nikoli osobní přesvědčení. |
+| Design Principle / Návrhový princip | Pravidlo návrhu metodiky, zde [P1](01-foundations/design-principles.md)–[P11](01-foundations/design-principles.md); nikoli osobní přesvědčení. |
 | Rolling Horizon / Posuvný horizont | Postupné zpřesňování nejbližšího plánu a revize vzdálenějších záměrů; nikoli automatický přesun restů. |
 | Traceability / Trasovatelnost | Schopnost vysvětlit relevantní původ a návaznost volby, požadavku či činnosti; nikoli povinný kompletní strom. |
 | Verification / Verifikace | Posouzení souladu artefaktů nebo systému se specifikací; není důkazem životního přínosu. |
 | Validation / Validace | Posouzení potřeb a fungování v zamýšleném použití; nenahrazuje ji kontrola odkazů nebo návrhových scénářů. |
 
-Klasifikace všech 36 DC v DOM-01 pokrývá i rozlišovací a odvozené pojmy. Aliasy a pojmy jazyka návrhu nejsou dalšími doménovými koncepty.
+Klasifikace všech 36 DC v [DOM-01](03-architecture/preliminary-domain-model.md) pokrývá i rozlišovací a odvozené pojmy. Aliasy a pojmy jazyka návrhu nejsou dalšími doménovými koncepty.

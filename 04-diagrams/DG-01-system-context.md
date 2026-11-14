@@ -40,4 +40,4 @@ Uvnitř hranice jsou skupiny funkcí metodiky, nikoli úplné členění na SS. 
 
 ## Předpoklady a omezení
 
-ASM-01 až ASM-04; model nezobrazuje všechny stakeholdery jednotlivě. Podpůrná role nemá automatický přístup k záznamům. Budoucí software není zakreslen, protože není součástí současné systémové hranice. „Skutečné jednání“ není technický regulovaný objekt.
+[ASM-01](../01-foundations/system-charter.md#předpoklady-a-omezení) až [ASM-04](../01-foundations/system-charter.md#předpoklady-a-omezení); model nezobrazuje všechny stakeholdery jednotlivě. Podpůrná role nemá automatický přístup k záznamům. Budoucí software není zakreslen, protože není součástí současné systémové hranice. „Skutečné jednání“ není technický regulovaný objekt.

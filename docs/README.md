@@ -33,7 +33,7 @@ Uživatelské návody jsou v češtině. U odborných pojmů může být v závo
 
 Uživatelská dokumentace je provozní pohled, ne zdroj definic. Závazné definice obsahuje [slovník](../glossary.md), vztahy a invarianty [doménový model](../03-architecture/preliminary-domain-model.md), odpovědnosti a rozhraní [konceptuální architektura](../03-architecture/conceptual-architecture.md).
 
-Návody v této složce jsou návrh provozního postupu k ověření, nikoli závazná architektura. Tři úrovně používání (minimální, standardní, rozšířená) patří k tomuto návrhu a nejsou totéž jako provozní režimy OP-01 až OP-07; rozdíl vysvětluje [provozní jádro](reference/operational-kernel.md#tři-úrovně-používání).
+Návody v této složce jsou návrh provozního postupu k ověření, nikoli závazná architektura. Tři úrovně používání (minimální, standardní, rozšířená) patří k tomuto návrhu a nejsou totéž jako provozní režimy [OP-01](../01-foundations/concept-of-operations.md) až [OP-07](../01-foundations/concept-of-operations.md); rozdíl vysvětluje [provozní jádro](reference/operational-kernel.md#tři-úrovně-používání).
 
 ## Co zde zatím není
 

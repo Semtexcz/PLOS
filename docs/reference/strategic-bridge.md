@@ -1,8 +1,8 @@
 # Strategická návaznost
 
-**Typ dokumentu:** reference • **Stav:** návrh pro Iteration 3B; provozní pohled na SS-01 až SS-06, nikoli nová architektura • **Rozsah:** hodnota → vize → strategie → zamýšlený výsledek → týdenní priorita → další krok
+**Typ dokumentu:** reference • **Stav:** návrh pro Iteration 3B; provozní pohled na [SS-01](../../03-architecture/conceptual-architecture.md#ss-01--values--vision-management) až [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation), nikoli nová architektura • **Rozsah:** hodnota → vize → strategie → zamýšlený výsledek → týdenní priorita → další krok
 
-Tato stránka popisuje horizonty a jejich předávání. Cesta je orientační, ne povinná hierarchie; běžná péče a závazky strategické zdůvodnění nepotřebují (INV-07).
+Tato stránka popisuje horizonty a jejich předávání. Cesta je orientační, ne povinná hierarchie; běžná péče a závazky strategické zdůvodnění nepotřebují ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
 ## Tři horizonty
 
@@ -12,7 +12,7 @@ Tato stránka popisuje horizonty a jejich předávání. Cesta je orientační, 
 | Taktický | týdny až měsíce | Jakou změnu nyní uskutečním a co se vejde do kapacity? |
 | Operativní | dny | Jak začnu jednat a co dnes nesmím minout? |
 
-Reflexe je společná (SS-06); cestu znázorňuje [tutorial](../tutorials/from-values-to-action.md#diagram-cesta-od-hodnoty-k-dalšímu-kroku), volbu při nejistotě [strategická revize](../how-to/strategic-review.md#volba-při-strategické-nejistotě).
+Reflexe je společná ([SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation)); cestu znázorňuje [tutorial](../tutorials/from-values-to-action.md#diagram-cesta-od-hodnoty-k-dalšímu-kroku), volbu při nejistotě [strategická revize](../how-to/strategic-review.md#volba-při-strategické-nejistotě).
 
 ## Co se předává
 
@@ -26,7 +26,7 @@ Reflexe je společná (SS-06); cestu znázorňuje [tutorial](../tutorials/from-v
 | Týdenní priorita | co dostane omezenou kapacitu vedle závazků | další krok a pojmenované odklady |
 | Další krok | konkrétní jednání s časem nebo podmínkou | provedení, nebo vědomá volba nejednat |
 
-Dokončení práce nedokládá zamýšlený výsledek (INV-05).
+Dokončení práce nedokládá zamýšlený výsledek ([INV-05](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
 ## Rozhodovací body
 
@@ -46,19 +46,19 @@ Při volbě alternativ se ptejte: Podporuje cesta hodnotu? Co vylučuje? Jak vel
 
 | Úroveň | Co se posuzuje | Otázka | Co se může změnit |
 | --- | --- | --- | --- |
-| FB-01 operativní | dnešní jednání a okolnosti | Co změnit v aktuálním jednání? | další krok, dnešní volba |
-| FB-02 taktická | týden, portfolio, kapacita | Co změnit v týdnu nebo ve výběru? | priority, rozsah, výběr záměrů |
-| FB-03 strategická | hodnoty, vize, předpoklady | Je zvolená cesta stále vhodná? | strategie, výsledek, vyjádření směru |
+| [FB-01](../../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) operativní | dnešní jednání a okolnosti | Co změnit v aktuálním jednání? | další krok, dnešní volba |
+| [FB-02](../../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) taktická | týden, portfolio, kapacita | Co změnit v týdnu nebo ve výběru? | priority, rozsah, výběr záměrů |
+| [FB-03](../../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) strategická | hodnoty, vize, předpoklady | Je zvolená cesta stále vhodná? | strategie, výsledek, vyjádření směru |
 
-FB-04 se týká režie metodiky, ne směru života. Strategickou revizi otevřete, když se vzorec opakuje v dalších týdnech navzdory změně taktiky, když experiment vyvrátil klíčový předpoklad, když se trvale změnily okolnosti, nebo když se hodnota přestala objevovat i po zmenšení rozsahu. Počet týdnů není univerzální pravidlo; záleží na délce vzorce, kontextu a vaší zkušenosti, kdy už nejde o náhodu.
+[FB-04](../../03-architecture/conceptual-architecture.md#zpětnovazební-architektura) se týká režie metodiky, ne směru života. Strategickou revizi otevřete, když se vzorec opakuje v dalších týdnech navzdory změně taktiky, když experiment vyvrátil klíčový předpoklad, když se trvale změnily okolnosti, nebo když se hodnota přestala objevovat i po zmenšení rozsahu. Počet týdnů není univerzální pravidlo; záleží na délce vzorce, kontextu a vaší zkušenosti, kdy už nejde o náhodu.
 
 Jeden den ani nedostatek kapacity strategii nemění; řeší se rozsahem nebo odkladem. Kadence je příklad, ne povinnost; zpětná vazba nemusí projít všemi úrovněmi.
 
 ## Vazby na architekturu
 
-- SS-01 vlastní hodnoty a vizi, SS-02 navrhuje cesty a experimenty, SS-03 vybírá záměry, SS-04 posuzuje kapacitu, SS-05 vede závazky a kroky, SS-06 interpretuje a doporučuje.
-- IF-02 předává rámec hodnot a vize jako orientaci, IF-04 strategie, cíle a experimenty jako kandidáty, IF-06 vybrané záměry jako autorizaci směru (ne alokaci), IF-11 doporučení člověku; změnu provádí vlastník významu.
-- Platí invarianty DOM-01: změna strategie, cíle ani plánu neruší závazek (INV-06); péče, závazek ani krok nepotřebují strategický cíl (INV-07); experiment má otázku a mez ukončení (INV-09); pozorování, předpoklad, interpretace a rozhodnutí se nesměšují (INV-10); neznámé není nula (INV-11); vnitřní překážka není vnější omezení (INV-17).
+- [SS-01](../../03-architecture/conceptual-architecture.md#ss-01--values--vision-management) vlastní hodnoty a vizi, [SS-02](../../03-architecture/conceptual-architecture.md#ss-02--strategy--experimentation) navrhuje cesty a experimenty, [SS-03](../../03-architecture/conceptual-architecture.md#ss-03--goal--portfolio-management) vybírá záměry, [SS-04](../../03-architecture/conceptual-architecture.md#ss-04--planning--capacity-management) posuzuje kapacitu, [SS-05](../../03-architecture/conceptual-architecture.md#ss-05--execution--commitment-management) vede závazky a kroky, [SS-06](../../03-architecture/conceptual-architecture.md#ss-06--review--adaptation) interpretuje a doporučuje.
+- [IF-02](../../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky) předává rámec hodnot a vize jako orientaci, [IF-04](../../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky) strategie, cíle a experimenty jako kandidáty, [IF-06](../../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky) vybrané záměry jako autorizaci směru (ne alokaci), [IF-11](../../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky) doporučení člověku; změnu provádí vlastník významu.
+- Platí invarianty [DOM-01](../../03-architecture/preliminary-domain-model.md): změna strategie, cíle ani plánu neruší závazek ([INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)); péče, závazek ani krok nepotřebují strategický cíl ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)); experiment má otázku a mez ukončení ([INV-09](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)); pozorování, předpoklad, interpretace a rozhodnutí se nesměšují ([INV-10](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)); neznámé není nula ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)); vnitřní překážka není vnější omezení ([INV-17](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
 ## Povinné a volitelné
 
@@ -79,7 +79,7 @@ Každá činnost nemusí být trasovatelná ke strategickému cíli. Trasovateln
 - Dvanáct týdnů je jedna z možných délek horizontu, ne norma.
 - Návaznost nezakládá nový formulář, evidenci, aplikaci ani softwarovou komponentu.
 - [Tutorial prvního týdne](../tutorials/first-week.md) i tato reference používají oba pojmy ve stejném smyslu: týdenní záměr je kandidátní zamýšlený výsledek; teprve týdenní priorita rozhoduje o alokaci kapacity.
-- Otevřené: spouštěče revizí (OQ-02), hloubka záznamu (OQ-03).
+- Otevřené: spouštěče revizí ([OQ-02](../../05-decisions/open-questions.md#otevřené-otázky)), hloubka záznamu ([OQ-03](../../05-decisions/open-questions.md#otevřené-otázky)).
 
 ## Autoritativní zdroje
 

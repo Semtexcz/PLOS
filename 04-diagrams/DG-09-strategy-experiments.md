@@ -25,6 +25,6 @@ classDiagram
 
 ## Výklad a omezení
 
-Interpretation je obsah odvozený při jednom původním Review, nikoli autonomní evidence či nová událost. Kandidátní a přijatá Strategy jsou rozlišeny lidskou volbou, ne dědičností. Assumption je volitelná vazba Experiment pouze proto, že pokus smí mít místo tvrzení poznávací otázku; samotný experiment bez otázky i předpokladu je neplatný (INV-09).
+Interpretation je obsah odvozený při jednom původním Review, nikoli autonomní evidence či nová událost. Kandidátní a přijatá Strategy jsou rozlišeny lidskou volbou, ne dědičností. Assumption je volitelná vazba Experiment pouze proto, že pokus smí mít místo tvrzení poznávací otázku; samotný experiment bez otázky i předpokladu je neplatný ([INV-09](../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
-Nerozhodný nebo prázdný poznatek nebrání ukončení pokusu. Doporučení není rozhodnutí, rozhodnutí nevyžaduje předchozí review. Vazby Value/Vision jsou v DG-06, vazby WOOP a jejich odvozené role v DOM-01; diagram nenahrazuje celý proces frameworku. INV-02/06/09/10/17/18; UC-01/05/06/07 a SV-05/06.
+Nerozhodný nebo prázdný poznatek nebrání ukončení pokusu. Doporučení není rozhodnutí, rozhodnutí nevyžaduje předchozí review. Vazby Value/Vision jsou v [DG-06](README.md#dg-06), vazby WOOP a jejich odvozené role v [DOM-01](../03-architecture/preliminary-domain-model.md); diagram nenahrazuje celý proces frameworku. [INV-02](../03-architecture/preliminary-domain-model.md#katalog-invariantů)/06/09/10/17/18; [UC-01](../01-foundations/concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci)/05/06/07 a [SV-05](../07-review/semantic-validation-report.md#cílené-sv-01-až-sv-10)/06.

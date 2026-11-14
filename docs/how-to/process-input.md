@@ -6,9 +6,9 @@
 
 1. **Pojmenujte podnět jednou větou.** Co to je, od koho přišlo a proč to řešíte? Nevyjasněný podnět (Captured Input) není závazek (Commitment).
 2. **Zjistěte, zda vyžaduje jednání.** Informace, oznámení nebo inspirace bez požadavku jednání nevyžadují. Uzavřete je nebo uložte k pozdějšímu použití.
-3. **Ověřte, zda už závazek nebo projekt existuje.** Komu jste co slíbili a co už běží? Když ano, připojte podnět k existující věci; nový záznam vytvoří duplicitní práci nebo závazek (INV-03/15).
-4. **Rozhodněte, zda přijímáte odpovědnost.** Žádost, doporučení ani zápis závazek nevytváří (INV-02). Závazek vzniká přijetím odpovědnosti nebo existující povinností — slibem, rolí, dohodou. Když odpovědnost nepřijmete, jde o nezávaznou možnost s podmínkou návratu, nebo o odmítnutou žádost.
-5. **Určete cestu.** Když stačí jedna činnost, určete další krok (Next Action): co, kdy a za jakých podmínek. Když je potřeba sladit víc kroků, závislostí nebo lidí, jde o projekt (Project). Projekt i závazek mohou existovat samostatně (INV-07).
+3. **Ověřte, zda už závazek nebo projekt existuje.** Komu jste co slíbili a co už běží? Když ano, připojte podnět k existující věci; nový záznam vytvoří duplicitní práci nebo závazek ([INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15).
+4. **Rozhodněte, zda přijímáte odpovědnost.** Žádost, doporučení ani zápis závazek nevytváří ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)). Závazek vzniká přijetím odpovědnosti nebo existující povinností — slibem, rolí, dohodou. Když odpovědnost nepřijmete, jde o nezávaznou možnost s podmínkou návratu, nebo o odmítnutou žádost.
+5. **Určete cestu.** Když stačí jedna činnost, určete další krok (Next Action): co, kdy a za jakých podmínek. Když je potřeba sladit víc kroků, závislostí nebo lidí, jde o projekt (Project). Projekt i závazek mohou existovat samostatně ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 6. **Ověřte, zda lze jednat nyní.** Když ano, začněte. Když ne, rozhodněte o odkladu s podmínkou, přejednání nebo odmítnutí.
 7. **Pojmenujte čekání a podmínku návratu.** Když jednání závisí na druhém člověku nebo vnější události, řekněte, na co čekáte a podle čeho poznáte čas návratu. U čekání, odkladu i možnosti napište, kdy se k věci vrátíte. Čekání není dokončení a odpovědnost trvá.
 
@@ -48,9 +48,9 @@ Kolegyně se ptá, zda do pátku připravíte podklady pro její prezentaci. Nic
 
 ## Když to nefunguje
 
-- **Nevíte, co podnět znamená:** zeptejte se odesílatele. Neúplná informace je přípustná; neznámý stav není splnění ani zrušení (INV-11).
+- **Nevíte, co podnět znamená:** zeptejte se odesílatele. Neúplná informace je přípustná; neznámý stav není splnění ani zrušení ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 - **Podnětů je mnoho:** vyjasněte je najednou v krátkém bloku, ne každý okamžitě.
-- **Závazek se nedá splnit:** navrhněte změnu dotčenému člověku. Změna plánu sama závazek neruší (INV-06).
+- **Závazek se nedá splnit:** navrhněte změnu dotčenému člověku. Změna plánu sama závazek neruší ([INV-06](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 - **Podnět je strategická možnost:** jde do portfolia jako kandidát, ne do dnešní práce.
 
 ## Související

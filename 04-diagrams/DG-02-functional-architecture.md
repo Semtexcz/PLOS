@@ -38,8 +38,8 @@ flowchart TB
 
 ## Prvky a vztahy
 
-Každý SS odpovídá stejnojmenné kapitole ARCH-01. Hrany jsou hlavní informační předání, nikoli časové pořadí. IF-11 znamená podnět, který se stává změnou až rozhodnutím člověka. Hrana k rámečku PLOS je souhrnná zkratka vztahu člověka se všemi SS.
+Každý SS odpovídá stejnojmenné kapitole [ARCH-01](../03-architecture/conceptual-architecture.md). Hrany jsou hlavní informační předání, nikoli časové pořadí. [IF-11](../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky) znamená podnět, který se stává změnou až rozhodnutím člověka. Hrana k rámečku PLOS je souhrnná zkratka vztahu člověka se všemi SS.
 
 ## Předpoklady a omezení
 
-Pro čitelnost není rozkreslen IF-10: každý SS poskytuje SS-06 platné reference a důvody. Okolí a IF-12 jsou v DG-01. Model není fyzickou dekompozicí do šesti aplikací ani šesti organizací. Vlastnictví konkrétních významů, rozsah invariantů a řešení překryvů jsou normativně vysvětleny v ARCH-01, nikoli geometrickou polohou uzlů.
+Pro čitelnost není rozkreslen [IF-10](../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky): každý SS poskytuje [SS-06](../03-architecture/conceptual-architecture.md#ss-06--review--adaptation) platné reference a důvody. Okolí a [IF-12](../03-architecture/conceptual-architecture.md#hlavní-rozhraní-a-toky) jsou v [DG-01](README.md#dg-01). Model není fyzickou dekompozicí do šesti aplikací ani šesti organizací. Vlastnictví konkrétních významů, rozsah invariantů a řešení překryvů jsou normativně vysvětleny v [ARCH-01](../03-architecture/conceptual-architecture.md), nikoli geometrickou polohou uzlů.

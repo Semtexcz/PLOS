@@ -18,9 +18,9 @@ Jsou to rozhodnutí autora pro pracovní návrh. Požadavky explicitně převzat
 
 ## Otevřené předpoklady a rizika
 
-ASM-01 až ASM-05 předpokládají alespoň občasnou ochotu reflektovat, hrubou dostupnost informací o kapacitě a závazcích, možnost uchovat minimum záznamů, alespoň částečně ovlivňovat nároky a únosnost šesti funkcí. Tyto předpoklady nebyly ověřeny s uživatelem.
+[ASM-01](../01-foundations/system-charter.md#předpoklady-a-omezení) až [ASM-05](../01-foundations/system-charter.md#předpoklady-a-omezení) předpokládají alespoň občasnou ochotu reflektovat, hrubou dostupnost informací o kapacitě a závazcích, možnost uchovat minimum záznamů, alespoň částečně ovlivňovat nároky a únosnost šesti funkcí. Tyto předpoklady nebyly ověřeny s uživatelem.
 
-H-01 až H-05 se týkají režie architektury, užitečnosti hrubého obrazu kapacity, kadence, obnovy a kvalitativní reflexe. Významná rizika jsou přetížení evidencí, tlak na výkon, vytlačení strategie operativou, ztráta závazku při změně směru a zaměňování vnějších omezení za vnitřní překážky. Přehled vlastníků a cílových iterací je v [registru otevřených otázek](../05-decisions/open-questions.md).
+[H-01](../05-decisions/open-questions.md#návrhové-hypotézy) až [H-05](../05-decisions/open-questions.md#návrhové-hypotézy) se týkají režie architektury, užitečnosti hrubého obrazu kapacity, kadence, obnovy a kvalitativní reflexe. Významná rizika jsou přetížení evidencí, tlak na výkon, vytlačení strategie operativou, ztráta závazku při změně směru a zaměňování vnějších omezení za vnitřní překážky. Přehled vlastníků a cílových iterací je v [registru otevřených otázek](../05-decisions/open-questions.md).
 
 Nejbližší sémantické riziko: hranice projektu, závazku a cíle a dvojí započtení nároků při pohledu na projekt i jeho kroky. Před praktickým používáním bude třeba navíc vymezit kritičnost, přijatelnou režii a rozsah sdílení.
 
@@ -32,8 +32,8 @@ Výsledek kontrol, nálezy a hranice jistoty jsou v [Architecture Review Report]
 
 ## Doporučené zadání Iteration 2
 
-**Zpřesnit doménový model pouze ve čtyřech skupinách:** (1) cíl–výsledek–projekt–závazek–další krok, (2) oblast–péče–rutina–návyk, (3) strategie–scénář–předpoklad–experiment–pozorování–rozhodnutí a (4) kapacita–alokace–plán. Doplnit odůvodněné vztahy a nezbytné kardinality/invarianty, příklady a protipříklady, vyřešit OQ-04 a ohraničit OQ-06. Aktualizovat pouze dotčený slovník, model, diagramy a rozhodnutí; posoudit dopad na požadavky.
+**Zpřesnit doménový model pouze ve čtyřech skupinách:** (1) cíl–výsledek–projekt–závazek–další krok, (2) oblast–péče–rutina–návyk, (3) strategie–scénář–předpoklad–experiment–pozorování–rozhodnutí a (4) kapacita–alokace–plán. Doplnit odůvodněné vztahy a nezbytné kardinality/invarianty, příklady a protipříklady, vyřešit [OQ-04](../05-decisions/open-questions.md#otevřené-otázky) a ohraničit [OQ-06](../05-decisions/open-questions.md#otevřené-otázky). Aktualizovat pouze dotčený slovník, model, diagramy a rozhodnutí; posoudit dopad na požadavky.
 
-Dokončení I2 vyžaduje konzistentní vyjádření UC-01 až UC-08 bez fiktivních cílů, záměny odpovědnosti a činnosti a dvojího započtení kapacity. Přesné vstupy, výstupy, závislosti a výluky jsou v [roadmapě](../06-roadmap/architecture-roadmap.md). Implementace, úplné workflow, algoritmy a finální metriky do I2 nepatří.
+Dokončení I2 vyžaduje konzistentní vyjádření [UC-01](../01-foundations/concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci) až [UC-08](../01-foundations/concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci) bez fiktivních cílů, záměny odpovědnosti a činnosti a dvojího započtení kapacity. Přesné vstupy, výstupy, závislosti a výluky jsou v [roadmapě](../06-roadmap/architecture-roadmap.md). Implementace, úplné workflow, algoritmy a finální metriky do I2 nepatří.
 
 **Tímto předáním práce končí v Iteration 1.**

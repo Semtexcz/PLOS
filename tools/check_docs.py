@@ -4,7 +4,8 @@
 Pomocný nástroj pro kontrolu dokumentace, nikoli součást metodiky PLOS.
 Kontroluje uzavření zdrojových bloků, šířky tabulek, relativní odkazy včetně
 kotev, definice a odkazy identifikátorů, deklarované doménové asociace a
-násobnosti a pokrytí sémantických případů. Není to parser gramatiky Mermaid,
+násobnosti a pokrytí sémantických případů. Identifikátory se porovnávají po
+normalizaci Markdown odkazů na jejich text. Není to parser gramatiky Mermaid,
 renderer ani validátor UML metamodelu.
 
 Použití:
@@ -50,6 +51,11 @@ def anchors(text: str) -> set[str]:
     return out
 
 
+def strip_links(text: str) -> str:
+    """Nahradí odkazy jejich textem, aby kontrola ID nezávisela na formátování."""
+    return re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+
+
 def check_markdown(files: list[Path], errors: list[str]) -> tuple[int, int]:
     links = 0
     blocks = 0
@@ -90,7 +96,7 @@ def check_markdown(files: list[Path], errors: list[str]) -> tuple[int, int]:
 def check_identifiers(files: list[Path], errors: list[str]) -> dict[str, set[str]]:
     ids: dict[str, set[str]] = {}
     for pref, p in CANONICAL_SOURCES.items():
-        defs = re.findall(r"^\| (" + pref + r"-\d+)\b", p.read_text(), re.M)
+        defs = re.findall(r"^\| (" + pref + r"-\d+)\b", strip_links(p.read_text()), re.M)
         ids[pref] = set(defs)
         if len(defs) != len(set(defs)):
             errors.append(f"{pref}: duplicate definition")
@@ -98,8 +104,9 @@ def check_identifiers(files: list[Path], errors: list[str]) -> dict[str, set[str
         if set(defs) != want:
             errors.append(f"{pref}: unexpected definitions {set(defs) ^ want}")
     for p in files:
+        text = strip_links(p.read_text())
         for pref, valid in ids.items():
-            for token in re.findall(r"\b" + pref + r"-\d+\b", p.read_text()):
+            for token in re.findall(r"\b" + pref + r"-\d+\b", text):
                 if token not in valid:
                     errors.append(f"{p.name}: undefined {token}")
     return ids
@@ -118,7 +125,7 @@ def domain_relations(dom: str) -> dict[str, tuple[set[str], set[str]]]:
 
 
 def check_diagrams(errors: list[str]) -> int:
-    dom = DOMAIN_MODEL.read_text()
+    dom = strip_links(DOMAIN_MODEL.read_text())
     relations = domain_relations(dom)
     edges = 0
     for p in sorted(DIAGRAMS.glob("DG-*.md")):
@@ -152,7 +159,7 @@ def check_diagrams(errors: list[str]) -> int:
 
 
 def check_semantics(ids: dict[str, set[str]], errors: list[str]) -> tuple[int, int]:
-    sem = SEMANTIC_REPORT.read_text()
+    sem = strip_links(SEMANTIC_REPORT.read_text())
     cases = re.findall(r"^\| ((?:UC|SV)-\d+) —", sem, re.M)
     if len(cases) != 22 or len(set(cases)) != 22:
         errors.append(f"case count {len(cases)}")
@@ -179,7 +186,7 @@ def main(argv: list[str] | None = None) -> int:
     links, blocks = check_markdown(files, errors)
     ids = check_identifiers(files, errors)
 
-    dom = DOMAIN_MODEL.read_text()
+    dom = strip_links(DOMAIN_MODEL.read_text())
     classifications = re.findall(
         r"^\| DC-\d+ .*?\| (Core|Contextual|Optional|Derived) ", dom, re.M
     )

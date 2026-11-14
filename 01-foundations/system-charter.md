@@ -1,6 +1,6 @@
 # System Charter
 
-**ID:** CH-01 • **Stav:** návrh v0.2, minimální upřesnění SoI v I2 (ADR-07); normativní původ rozlišuje [README](../README.md).
+**ID:** CH-01 • **Stav:** návrh v0.2, minimální upřesnění SoI v I2 ([ADR-07](../05-decisions/decision-log.md#adr-07--metodika-bez-předpokladu-implementace-a-povinných-záznamů)); normativní původ rozlišuje [README](../README.md).
 
 ## Problém, mise a účel
 
@@ -57,24 +57,24 @@ Necíle Iteration 1 a 2: software, UI, technologie, datové schéma, úplná pro
 | ID | Neověřený předpoklad | Dopad neplatnosti / postup |
 | --- | --- | --- |
 | ASM-01 | Uživatel chce alespoň někdy vědomě reflektovat své volby | Metodiku lze odložit; nelze vynucovat adopci ani tvrdit účinek |
-| ASM-02 | Lze získat alespoň hrubou informaci o kapacitě a kritických závazcích | Pracovat s „neznámé“, omezit nové plánované nároky; H-02 |
+| ASM-02 | Lze získat alespoň hrubou informaci o kapacitě a kritických závazcích | Pracovat s „neznámé“, omezit nové plánované nároky; [H-02](../05-decisions/open-questions.md#návrhové-hypotézy) |
 | ASM-03 | Pokud člověk potřebuje kontinuitu explicitních záznamů, má dostupný způsob jejich uchování; nejde o podmínku používání PLOS | Bez záznamů může orientace i obnova vycházet z aktuálního poznání; historie nemusí být rekonstruovatelná |
 | ASM-04 | O některých nárocích lze vyjednávat nebo je odkládat | Rozlišit ovlivnitelné a neovlivnitelné; přiznat neřešitelný konflikt, nikoli vyrábět kapacitu |
-| ASM-05 | Šest navržených funkcí lze vykonávat s únosnou režií | Zjednodušit formu a četnost; H-01 a R-01 |
+| ASM-05 | Šest navržených funkcí lze vykonávat s únosnou režií | Zjednodušit formu a četnost; [H-01](../05-decisions/open-questions.md#návrhové-hypotézy) a [R-01](../05-decisions/open-questions.md#rizika-návrhu) |
 
-Omezení jsou normativně evidována jako CON-01 až CON-03 v [požadavcích](../02-requirements/high-level-requirements.md). P1–P11 platí napříč systémem. PLOS nemůže změnou záznamu odstranit vnější povinnost nebo její důsledky.
+Omezení jsou normativně evidována jako [CON-01](../02-requirements/high-level-requirements.md#omezení-návrhu) až [CON-03](../02-requirements/high-level-requirements.md#omezení-návrhu) v [požadavcích](../02-requirements/high-level-requirements.md). [P1](design-principles.md)–[P11](design-principles.md) platí napříč systémem. PLOS nemůže změnou záznamu odstranit vnější povinnost nebo její důsledky.
 
 ## Předběžná kritéria úspěchu
 
 | ID | Kritérium | Jak se posoudí a kdy |
 | --- | --- | --- |
-| SC-01 | Člověk umí vysvětlit vazbu důležité volby na vlastní důvody a může ji změnit | UC-01 a UC-06 při návrhové verifikaci; srozumitelnost později s uživatelem |
-| SC-02 | Návrh připustí běžnou péči bez strategického cíle a ukáže konflikt kapacity | UC-02 a UC-03; žádné skryté předpoklady neomezených zdrojů |
-| SC-03 | Přerušení plánování nebrání zjednodušenému návratu | UC-04; praktickou únosnost ověřit v pilotu |
-| SC-04 | Nová strategie nepřepisuje existující dohody a důvody minulých voleb | UC-05; změnu lze vysledovat bez fiktivního zrušení povinnosti |
-| SC-05 | Review rozliší vykonanou činnost od změny v životě a dovolí nejistotu | UC-07; nelze tvrdit kauzalitu jen z korelace |
-| SC-06 | Režie metodiky je pro uživatele přijatelná a nevytěsňuje regeneraci | UC-08 + budoucí kvalitativní validace; mez přijatelnosti zatím OQ-03 |
+| SC-01 | Člověk umí vysvětlit vazbu důležité volby na vlastní důvody a může ji změnit | [UC-01](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci) a [UC-06](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci) při návrhové verifikaci; srozumitelnost později s uživatelem |
+| SC-02 | Návrh připustí běžnou péči bez strategického cíle a ukáže konflikt kapacity | [UC-02](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci) a [UC-03](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci); žádné skryté předpoklady neomezených zdrojů |
+| SC-03 | Přerušení plánování nebrání zjednodušenému návratu | [UC-04](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci); praktickou únosnost ověřit v pilotu |
+| SC-04 | Nová strategie nepřepisuje existující dohody a důvody minulých voleb | [UC-05](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci); změnu lze vysledovat bez fiktivního zrušení povinnosti |
+| SC-05 | Review rozliší vykonanou činnost od změny v životě a dovolí nejistotu | [UC-07](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci); nelze tvrdit kauzalitu jen z korelace |
+| SC-06 | Režie metodiky je pro uživatele přijatelná a nevytěsňuje regeneraci | [UC-08](concept-of-operations.md#ilustrativní-scénáře-pro-návrhovou-verifikaci) + budoucí kvalitativní validace; mez přijatelnosti zatím [OQ-03](../05-decisions/open-questions.md#otevřené-otázky) |
 
 Splnění dokumentačních quality gates není splněním SC-01 až SC-06 v reálném životě. Současný stav zachycuje [review report](../07-review/architecture-review-report.md). Kontext viz [DG-01](../04-diagrams/README.md#dg-01).
 
-**Změna I2:** ADR-07 zpřesňuje SoI a podmíněnost ASM-03 podle zadání. Mise, hranice skutečného jednání, role člověka a šest funkčních odpovědností se nemění. Konkrétní provozní forma není navržena.
+**Změna I2:** [ADR-07](../05-decisions/decision-log.md#adr-07--metodika-bez-předpokladu-implementace-a-povinných-záznamů) zpřesňuje SoI a podmíněnost ASM-03 podle zadání. Mise, hranice skutečného jednání, role člověka a šest funkčních odpovědností se nemění. Konkrétní provozní forma není navržena.
