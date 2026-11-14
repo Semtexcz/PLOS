@@ -91,6 +91,7 @@ Audit je read-only, dokud uživatel neschválí opravy. Nálezy pište jako konk
 ## 6. Diagramy, příklady a odkazy
 
 - Diagram použijte jen tehdy, když zkrátí vysvětlení rozhodnutí nebo posloupnosti. Jeden malý diagram na dokument je zpravidla dost.
+- Uživatelský diagram pište s českými popisky a minimum uzlů. Zobrazuje rozhodnutí nebo posloupnost, ne doménový model ani UML schéma.
 - Preferujte Mermaid nebo D2 ve zdrojovém bloku, aby byl text čitelný i bez rendereru.
 - Diagram nesmí zavádět nový vztah, pojem nebo povinnost. Musí být v souladu s textem a s DOM-01.
 - Popište, co diagram zobrazuje a co ne. Šipka neznamená automatické řízení ani časový tok, pokud to text neříká.

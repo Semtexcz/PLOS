@@ -9,11 +9,14 @@ PLOS není aplikace. Funguje s papírem, poznámkami nebo bez zápisu. Nevyžadu
 | Chci… | Dokument | Čas |
 | --- | --- | --- |
 | poprvé zkusit PLOS | [První týden s PLOS](tutorials/first-week.md) | 40–45 minut první den, potom 2–5 minut denně a 10 minut na konci týdne |
+| projít cestu od hodnoty k prvnímu kroku | [Od hodnot k jednání](tutorials/from-values-to-action.md) | 25–30 minut |
 | rozhodnout, co dělat dnes | [Denní rozhodování](how-to/daily-review.md) | 5 minut |
 | naplánovat týden | [Týdenní plánování](how-to/weekly-planning.md) | 20–30 minut |
-| pochopit pravidla a pojmy | [Provozní jádro](reference/operational-kernel.md) | 15 minut |
+| vrátit se ke strategickému směru | [Strategická revize](how-to/strategic-review.md) | 20–30 minut, podle potřeby |
+| dohledat pravidla a pojmy | [Provozní jádro](reference/operational-kernel.md) | 15 minut |
+| dohledat strategickou návaznost | [Strategická návaznost](reference/strategic-bridge.md) | 10 minut |
 
-Doporučené pořadí je tutorial, denní rozhodování, týdenní plánování a reference. Nemusíte je absolvovat v tomto pořadí. Při nízké kapacitě začněte zkrácenou verzí denního rozhodování.
+Doporučené pořadí je tutorial, denní rozhodování, týdenní plánování a reference. Nemusíte je absolvovat v tomto pořadí. Při nízké kapacitě začněte zkrácenou verzí denního rozhodování. Strategické dokumenty použijte, až když potřebujete propojit dlouhodobý směr s týdnem; jejich znalost není podmínkou běžného používání.
 
 ## Co PLOS předpokládá
 
@@ -32,4 +35,4 @@ Návody v této složce jsou návrh provozního postupu k ověření, nikoli zá
 
 ## Co zde zatím není
 
-Chybí samostatné vysvětlující texty (explanation). Doplní se, až bude jasné, které otázky uživatelé skutečně řeší. Chybí také návody pro strategické scénáře a experimenty; provozní jádro je pouze zmiňuje jako rozšířenou úroveň.
+Chybí samostatné vysvětlující texty (explanation). Doplní se, až bude jasné, které otázky uživatelé skutečně řeší. Strategické scénáře a experimenty pokrývá jeden příklad v tutorialu a jedna volba v how-to; samostatný návod pro vícealternativní scénáře zatím nevznikl.
