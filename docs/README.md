@@ -10,13 +10,15 @@ PLOS není aplikace. Funguje s papírem, poznámkami nebo bez zápisu. Nevyžadu
 | --- | --- | --- |
 | poprvé zkusit PLOS | [První týden s PLOS](tutorials/first-week.md) | 40–45 minut první den, potom 2–5 minut denně a 10 minut na konci týdne |
 | projít cestu od hodnoty k prvnímu kroku | [Od hodnot k jednání](tutorials/from-values-to-action.md) | 25–30 minut |
+| vyjasnit nový podnět nebo žádost | [Zpracování nového podnětu](how-to/process-input.md) | 2–5 minut |
 | rozhodnout, co dělat dnes | [Denní rozhodování](how-to/daily-review.md) | 5 minut |
 | naplánovat týden | [Týdenní plánování](how-to/weekly-planning.md) | 20–30 minut |
 | vrátit se ke strategickému směru | [Strategická revize](how-to/strategic-review.md) | 20–30 minut, podle potřeby |
 | dohledat pravidla a pojmy | [Provozní jádro](reference/operational-kernel.md) | 15 minut |
+| dohledat pravidla pro podněty a závazky | [Podněty, závazky a další kroky](reference/commitment-workflow.md) | 10 minut |
 | dohledat strategickou návaznost | [Strategická návaznost](reference/strategic-bridge.md) | 10 minut |
 
-Doporučené pořadí je tutorial, denní rozhodování, týdenní plánování a reference. Nemusíte je absolvovat v tomto pořadí. Při nízké kapacitě začněte zkrácenou verzí denního rozhodování. Strategické dokumenty použijte, až když potřebujete propojit dlouhodobý směr s týdnem; jejich znalost není podmínkou běžného používání.
+Doporučené pořadí je tutorial, denní rozhodování, týdenní plánování a reference. Nemusíte je absolvovat v tomto pořadí. Při nízké kapacitě začněte zkrácenou verzí denního rozhodování. Zpracování podnětu použijte, když přijde nová žádost, informace nebo nápad; vyjasnit je můžete později. Strategické dokumenty použijte, až když potřebujete propojit dlouhodobý směr s týdnem; jejich znalost není podmínkou běžného používání.
 
 ## Co PLOS předpokládá
 

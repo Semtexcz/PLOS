@@ -10,6 +10,8 @@
 4. **Určete další krok (1 minuta).** Napište jednu konkrétní činnost s časem nebo podmínkou. „Ve 14:00 zavolám a domluvím termín“ je krok. „Vyřešit telefonáty“ není.
 5. **Ukončete den (1 minuta).** Věnujte minutu tomu, co se skutečně stalo. Stačí věta: co vyšlo, co se změnilo, co zůstalo. Nic nedoplňujte zpětně.
 
+Když během dne přijde nová žádost nebo nápad, nemusíte je řešit hned. Zachyťte je a vyjasněte podle [zpracování nového podnětu](process-input.md); dnešní práci kvůli nim nepřerušujte.
+
 ## Minimální úroveň používání
 
 Když je čas nebo energie výrazně nižší, zkraťte postup na tři otázky:
@@ -37,5 +39,6 @@ Odpovězte si je kdykoli během dne, klidně ústně. Minulost nerekonstruujte. 
 ## Související
 
 - [Týdenní plánování](weekly-planning.md) — když se konflikt nevyřeší během dne.
+- [Zpracování nového podnětu](process-input.md) — když přijde nová žádost, informace nebo nápad.
 - [První týden s PLOS](../tutorials/first-week.md) — pokud začínáte.
 - [Provozní jádro](../reference/operational-kernel.md) — pravidla, ze kterých postup vychází.
