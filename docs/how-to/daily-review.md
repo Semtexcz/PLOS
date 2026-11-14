@@ -1,14 +1,14 @@
 # Denní rozhodování
 
-**Co tím vyřešíte:** zvolíte, čemu se dnes věnovat, a určíte první krok. **Kdy:** každý den, obvykle 5 minut. **Vstupy:** dnešní závazky, týdenní záměr (pokud ho máte), pevné body v kalendáři a odhad energie. **Předpoklady:** nepotřebujete záznam z minulých dní ani aplikaci.
+**Co tím vyřešíte:** zvolíte, čemu se dnes věnovat, a určíte první krok. **Kdy:** každý den, obvykle 5 minut. **Vstupy:** dnešní závazky, potřeby péče, týdenní záměr (pokud ho máte), pevné body v kalendáři a odhad energie. **Předpoklady:** nepotřebujete záznam z minulých dní ani aplikaci. Odpovědi mohou být ústní; zápis je pomůcka, ne podmínka. Když máte závazků víc, pomůže krátká poznámka nebo jiná vnější opora — udržet všechny jen v paměti není spolehlivé.
 
 ## Postup
 
-1. **Přečtěte si, co dnes platí (1 minuta).** Projděte závazky s dnešním termínem nebo dopadem na druhé. Zkontrolujte, zda se něco nezměnilo. Co přestanete sledovat, nezaniká.
+1. **Přečtěte si, co dnes platí (1 minuta).** Projděte závazky s dnešním termínem nebo dopadem na druhé. Zkontrolujte, zda se něco nezměnilo. Co přestanete sledovat, nezaniká. Zeptejte se také: **Co dnes potřebuje péči, i když to není úkol ani slib?** Může jít o zdraví a regeneraci, vztahy, domácnost nebo rodinnou péči. Nemusíte z toho dělat závazek ani projekt.
 2. **Zvolte jednu věc (1 minuta).** Vyberte, co je dnes nejdůležitější, a řekněte si proč. „Protože to čeká kolegyně“ je důvod. „Protože bych měl“ není rozhodnutí. Když už něco běží, rozhodněte se vědomě mezi pokračováním a zahájením nové práce.
 3. **Ověřte kapacitu (1 minuta).** Porovnejte zvolenou věc se skutečným časem a energií. Když se to nevejde, zmenšete rozsah nebo něco odložte. Priorita nepřidá hodinu.
-4. **Určete další krok (1 minuta).** Napište jednu konkrétní činnost s časem nebo podmínkou. „Ve 14:00 zavolám a domluvím termín“ je krok. „Vyřešit telefonáty“ není.
-5. **Ukončete den (1 minuta).** Věnujte minutu tomu, co se skutečně stalo. Stačí věta: co vyšlo, co se změnilo, co zůstalo. Nic nedoplňujte zpětně.
+4. **Určete další krok (1 minuta).** Pojmenujte jednu konkrétní činnost s časem nebo podmínkou, klidně jen v hlavě. „Ve 14:00 zavolám a domluvím termín“ je krok. „Vyřešit telefonáty“ není.
+5. **Ukončete den (1 minuta).** Věnujte minutu tomu, co se skutečně stalo. Stačí jedna věta, klidně ústně: co vyšlo, co se změnilo, co zůstalo. Nic nedoplňujte zpětně.
 
 Když během dne přijde nová žádost nebo nápad, nemusíte je řešit hned. Zachyťte je a vyjasněte podle [zpracování nového podnětu](process-input.md); dnešní práci kvůli nim nepřerušujte.
 
@@ -34,7 +34,7 @@ Odpovězte si je kdykoli během dne, klidně ústně. Minulost nerekonstruujte. 
 - **Položek je příliš:** vyberte jednu. Ostatní se tím nezmění na splněné, jen se dnes nevykonají.
 - **Nemáte energii:** snižte rozsah nebo odpočívejte. Odpočinek je platný výsledek, ne selhání.
 - **Dvě věci se bijí:** pojmenujte konflikt a rozhodněte, co zmenšíte, odložíte nebo s kým přejednáte. Neřešený konflikt je přípustný stav.
-- **Nechcete plán dodržet:** rozhodnutí změnit vlastní plán je vaše. Zapište důvod a upravte plán, ne skutečnost. Odklad provedení je samostatné rozhodnutí. Když změna ovlivní to, co jste slíbili jinému člověku, navrhněte ji; závazek se mění až dohodou.
+- **Nechcete plán dodržet:** rozhodnutí změnit vlastní plán je vaše. Pojmenujte důvod a upravte plán, ne skutečnost. Odklad provedení je samostatné rozhodnutí. Když změna ovlivní to, co jste slíbili jinému člověku, navrhněte ji; závazek se mění až dohodou.
 
 ## Související
 

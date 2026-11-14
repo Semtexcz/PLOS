@@ -8,10 +8,10 @@ Použijte ho, když se rozhodnutí mezi pracemi opakuje, když se hromadí zahá
 
 ## Postup
 
-1. **Posuďte, co už běží (2 minuty).** Vyjmenujte práci, kterou jste skutečně zahájili a dosud neukončili. Nevybraný kandidát, nápad ani nezávazné čekání na informaci se nepočítají. Odpovězte odděleně na dvě otázky: kolik práce je zahájené a dosud neukončené, a která z ní právě vyžaduje aktivní pozornost nebo alokaci. Pozastavená práce může uvolnit bezprostřední kapacitu, ale zůstává zahájená; pouhé pozastavení není dokončení.
+1. **Posuďte, co už běží (2 minuty).** Vyjmenujte práci, kterou jste skutečně zahájili a dosud neukončili. Nevybraný kandidát, nápad ani nezávazné čekání na informaci se nepočítají. Stejná práce zůstává jednou položkou, i když podporuje dva záměry nebo souvisí se závazkem i projektem; nezapočítávejte ji dvakrát. Odpovězte odděleně na dvě otázky: kolik práce je zahájené a dosud neukončené, a která z ní právě vyžaduje aktivní pozornost nebo vyčleněný čas. Pozastavená práce může uvolnit bezprostřední kapacitu, ale zůstává součástí zahájené a dosud neukončené práce; pouhé pozastavení není dokončení.
 2. **Zvolte práci (2 minuty).** Rozhodněte podle situace, ne podle pevného pořadí. Zvažte závaznost (co skutečně platí), naléhavost (blízký termín nebo bezprostřední důsledky), důležitost (hodnoty, potřeby péče a vybrané výsledky), proveditelnost, rozpracovanost (co už běží) a regeneraci (co potřebujete pro únosnou kapacitu). Závazek je omezení a odpovědnost, ne automaticky absolutní priorita každého dne. Strategický záměr nemá automatickou přednost, ale ani každý závazek nevyžaduje dnešní aktivitu. Když se hlediska rozcházejí, pojmenujte konflikt a rozhodněte vědomě; bodování ani univerzální pořadí volbu nenahrazují.
-3. **Ověřte kapacitu (1 minuta).** Porovnejte zdrojový nárok vybrané práce s dostupností. Když se nevejde, rozhodněte předem: zmenšit rozsah, odložit, přejednat s dotčeným člověkem, nebo přiznat nevyřešený konflikt. Priorita ani strategie kapacitu nepřidají.
-4. **Zahajte, pokračujte, pozastavte, opusťte nebo dokončete.** Zahájení znamená, že práci věnujete pozornost. Pokračování je nová volba, ne setrvačnost. Pozastavení nebo blokaci pojmenujte jako odklad s podmínkou návratu; práce zůstává zahájená a neukončená. Vědomé opuštění rozsahu je samostatné rozhodnutí, ne dokončení; závazek vůči jinému člověku tím nezaniká. Dokončení se týká rozsahu práce, ne zamýšleného výsledku.
+3. **Ověřte kapacitu (1 minuta).** Porovnejte, co vybraná práce potřebuje za čas a energii, s tím, co je skutečně dostupné. Když se nevejde, rozhodněte předem: zmenšit rozsah, odložit, přejednat s dotčeným člověkem, nebo přiznat nevyřešený konflikt. Priorita ani strategie kapacitu nepřidají.
+4. **Zahajte, pokračujte, pozastavte, opusťte nebo dokončete.** Zahájení znamená, že práci věnujete pozornost. Pokračování je nová volba, ne setrvačnost. Pozastavení nebo blokaci pojmenujte jako odklad s podmínkou návratu; práce zůstává zahájená a neukončená. Vědomé opuštění rozsahu je samostatné rozhodnutí, ne dokončení; související závazek tím automaticky nezaniká. Dokončení se týká rozsahu práce, ne zamýšleného výsledku.
 5. **Uzavřete smyčku (1 minuta).** Dokončená práce nebo práce, jejíž rozsah jste vědomě opustili, přestává být rozpracovaná. Pozastavená práce uvolní pozornost, ale zůstává zahájená a neukončená; závazek, který k ní patří, trvá bez ohledu na pozastavení projektu. Uvolněte pozornost vědomě a rozhodněte, co dostane prostor.
 
 ```mermaid
@@ -22,17 +22,17 @@ flowchart LR
     D -->|"ne"| B
     D -->|"ano"| E["Rozpracovaná práce"]
     E -->|"nepokračuje"| F["Čekání, blokace nebo pozastavení"]
-    F --> E
+    F -->|"podmínka návratu splněna,<br/>nová volba pokračovat"| E
     E -->|"dokončeno nebo rozsah opuštěn"| G["Uzavření rozsahu a reflexe"]
     G --> B
     C -.->|"nová okolnost"| B
 ```
 
-Obrázek 1 — Pracovní tok od vyjasněné práce k dokončení. Zobrazuje volbu, ověření kapacity, blokaci či pozastavení a návrat k výběru. Pozastavená práce se vrací do rozpracované práce, ne k dokončení. Diagram nepojmenovává sloupce tabule ani neukládá povinné pořadí.
+Obrázek 1 — Pracovní tok od vyjasněné práce k dokončení. Zobrazuje volbu, ověření kapacity, blokaci či pozastavení a návrat k výběru. Když se práce do kapacity nevejde, samotný návrat k výběru nestačí: zmenšete rozsah, odložte s podmínkou, přejednejte s dotčeným člověkem, nebo přiznejte nevyřešený konflikt. Z čekání a pozastavení se práce nevrací automaticky; návrat nastane až splněním podmínky návratu a novou volbou pokračovat. Pozastavená práce zůstává zahájená a neukončená, ne dokončená. Diagram nepojmenovává sloupce tabule ani neukládá povinné pořadí.
 
 ## Čekání a blokování
 
-Když práce nemůže pokračovat, napište, na co čekáte a podle čeho poznáte návrat. U závazku odpovědnost trvá; u dobrovolné práce se rozhodněte, zda čekání stojí za pozornost. Blokovaná ani pozastavená práce není dokončená. Hledejte jiný další krok, který na překážce nezávisí, nebo práci vědomě opusťte; samotné pozastavení rozsah neukončuje.
+Když práce nemůže pokračovat, pojmenujte, na co čekáte a podle čeho poznáte návrat. U závazku odpovědnost trvá; u dobrovolné práce se rozhodněte, zda čekání stojí za pozornost. Blokovaná ani pozastavená práce není dokončená. Hledejte jiný další krok, který na překážce nezávisí, nebo práci vědomě opusťte; samotné pozastavení rozsah neukončuje.
 
 ## Očekávaný výsledek
 

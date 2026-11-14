@@ -6,8 +6,8 @@
 
 1. **Pojmenujte podnět jednou větou.** Co to je, od koho přišlo a proč to řešíte? Nevyjasněný podnět (Captured Input) není závazek (Commitment).
 2. **Zjistěte, zda vyžaduje jednání.** Informace, oznámení nebo inspirace bez požadavku jednání nevyžadují. Uzavřete je nebo uložte k pozdějšímu použití.
-3. **Ověřte, zda už věc existuje.** Komu jste co slíbili a co už běží? Když podnět souvisí s existujícím závazkem, projektem nebo krokem, připojte ho k téže věci a posuďte, co se změnilo: potřebujete nový další krok, čekáte na vnější událost, mění se plán, roste nárok na kapacitu, nebo je věc dokončená. Novou identitu ani druhou instanci práce nevytvářejte ([INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15); otázky shrnuje [Podněty, závazky a další kroky](../reference/commitment-workflow.md#co-mění-nový-podnět-u-existující-věci).
-4. **Rozhodněte, jak odpovídáte.** Máte čtyři možnosti: informace bez akce, odmítnutí nebo odložení s podmínkou návratu, přijetí odpovědnosti (závazek), nebo dobrovolné jednání bez závazku. Přijetí závazku není podmínkou jednání. Žádost ani doporučení závazek nevytváří ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)), ale smysluplnou činnost můžete udělat i bez něj.
+3. **Ověřte, zda už věc existuje.** Komu jste co slíbili a co už běží? Když podnět souvisí s existujícím závazkem, projektem nebo krokem, připojte ho k téže věci a posuďte, co se změnilo: potřebujete nový další krok, čekáte na vnější událost, mění se plán, roste nárok na kapacitu, nebo je věc dokončená. Novou identitu ani druhou instanci práce nevytvářejte; otázky shrnuje [Podněty, závazky a další kroky](../reference/commitment-workflow.md#co-mění-nový-podnět-u-existující-věci).
+4. **Rozhodněte, jak odpovídáte.** Máte pět možností: informace bez akce, odmítnutí (záležitost tím končí), odložení s podmínkou návratu, přijetí odpovědnosti (závazek), nebo dobrovolné jednání bez závazku. Přijetí závazku není podmínkou jednání. Žádost ani doporučení závazek nevytváří ([INV-02](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)), ale smysluplnou činnost můžete udělat i bez něj.
 5. **Určete cestu.** Když stačí jedna činnost, určete další krok (Next Action): co, kdy a za jakých podmínek. Když je potřeba sladit víc kroků, závislostí nebo lidí, jde o projekt (Project). Projekt může existovat bez závazku, závazek bez projektu a povinnost bez formálního projektu ([INV-07](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 6. **Ověřte, zda lze jednat nyní.** Porovnejte nárok s dostupností. Když ano, začněte. Když ne, rozhodněte o čekání s podmínkou návratu, odkladu, přejednání nebo odmítnutí. Zařazení do plánu samo kapacitu nevytvoří.
 7. **Pojmenujte čekání a podmínku návratu.** Řekněte, na co čekáte a podle čeho poznáte čas návratu. Čekání samo odpovědnost nevytváří; u existujícího závazku odpovědnost trvá. Čekání není dokončení.
@@ -17,18 +17,18 @@ flowchart TD
     A["Nový podnět"] --> B{"Souvisí s existující<br/>věcí?"}
     B -->|"ano"| C["Posuď existující věc"]
     B -->|"ne"| D{"Jak odpovídám?"}
-    D -->|"informace"| E["Informace bez akce"]
-    D -->|"odmítnout nebo odložit"| F["Možnost nebo odmítnutí<br/>s podmínkou návratu"]
+    D -->|"informace nebo odmítnutí"| E["Informace nebo odmítnutí<br/>bez další akce"]
+    D -->|"odložit"| F["Možnost nebo odklad<br/>s podmínkou návratu"]
     D -->|"přijmout odpovědnost"| G["Závazek"]
     D -->|"jednat dobrovolně"| H["Dobrovolný krok<br/>nebo projekt"]
     C --> I{"Proveditelné nyní?"}
     G --> I
     H --> I
     I -->|"ano"| J["Jednat"]
-    I -->|"ne"| K["Čekání, odklad s podmínkou,<br/>nebo přejednání"]
+    I -->|"ne"| K["Čekání, odklad s podmínkou,<br/>přejednání nebo odmítnutí"]
 ```
 
-Obrázek 1 — Rozhodovací strom pro nový podnět. Zobrazuje pořadí otázek, ne povinný záznam ani automatické řízení. U existující věci posuzujete, co se změnilo, ne vznik nové práce. Přijetí odpovědnosti je jedna z možností odpovědi, ne podmínka jednání.
+Obrázek 1 — Rozhodovací strom pro nový podnět. Zobrazuje pořadí otázek, ne povinný záznam ani automatické řízení. U existující věci posuzujete, co se změnilo, ne vznik nové práce. Přijetí odpovědnosti je jedna z možností odpovědi, ne podmínka jednání. Odmítnutí záležitost uzavírá; podmínku návratu má jen odklad a čekání.
 
 ## Když je kapacita nízká
 

@@ -1,6 +1,6 @@
 # První týden s PLOS
 
-**Typ dokumentu:** tutorial • **Čas:** přibližně 40–45 minut první den, 2–5 minut denně a 10 minut na konci týdne • **Pomůcky:** papír a pero
+**Typ dokumentu:** tutorial • **Čas:** přibližně 35–45 minut první den, 2–5 minut denně a 10 minut na konci týdne • **Pomůcky:** papír a pero
 
 PLOS je metodika pro rozhodování o čase, pozornosti a závazcích. Na fiktivním příkladu si vyzkoušíte rozlišení závazku, projektu a možnosti, týdenní záměr, další krok a reflexi. Potom je zopakujte s vlastními položkami.
 
@@ -46,21 +46,23 @@ U každé položky si položte tři otázky:
 
 Petr odpovídá: rozpočet má termín a dopad na tým, nákup na matku, pohyb se zanedbáním zhorší. Prezentace, kniha a kohoutek počkají. Výsledkem je krátký seznam důležitého s důvodem.
 
-## Krok 4 — Zvolte týdenní záměr (5 minut)
+## Krok 4 — Pojmenujte záměr a rozhodněte o přednosti (5 minut)
 
-**Týdenní záměr** je kandidátní zamýšlený výsledek (Intended Outcome) pro tento týden: popis žádoucí změny a podle čeho poznáte, že nastala. Volba záměru ještě nerozhoduje, že dostane kapacitu; priorita jen rozhoduje o přednosti a alokaci ověříte v kroku 5. Zvolte jeden nebo dva kandidáty. Závazky se nevolí; ty platí.
+**Týdenní záměr** je kandidátní zamýšlený výsledek (Intended Outcome) pro tento týden: popis žádoucí změny a podle čeho poznáte, že nastala. Zvolte jeden nebo dva kandidáty. Závazky se nevolí; ty platí.
+
+Potom u každého kandidáta rozhodněte, zda mu tento týden chcete dát přednost před ostatními možnostmi. Tomuto rozhodnutí o přednosti se říká priorita. Přednost je pořadí při výběru: sama neznamená, že na věc máte čas a energii, ani že se stihne. To ověříte v kroku 5.
 
 Petr si zapíše:
 
-- **Závazky:** nákup pro matku ve čtvrtek, rozpočet odeslaný do pátku.
-- **Záměr:** dvakrát běhat, celkem alespoň 40 minut.
+- **Závazky:** nákup pro matku ve čtvrtek, rozpočet odeslat do pátku.
+- **Záměr a přednost:** dvakrát běhat, celkem alespoň 40 minut; tento týden tomu dává přednost před knihou a kohoutkem.
 - **Vědomě odkládám:** prezentaci, kohoutek a knihu. Prezentace i kohoutek počkají do příštího týdne, kniha na dovolenou.
 
 Pojmenujte, kdy nebo za jakých podmínek se k položce vrátíte.
 
-## Krok 5 — Ověřte kapacitu (5 minut)
+## Krok 5 — Ověřte čas a energii a vyčleňte prostor (5 minut)
 
-Podívejte se na skutečný týden a svou kapacitu (Capacity). Kdy máte volný blok? Jak na tom budete s energií? Co už je pevné? Ověření kapacity vede k rozhodnutí o alokaci: vyčleňujete konkrétní zdroj záměru s vymezeným nárokem. Priorita sama kapacitu nezaručí.
+Nejprve odhadněte, kolik času a energie záměr skutečně potřebuje. Potom se podívejte na skutečný týden: kdy na něj máte prostor, co už je pevné a jak na tom budete s energií (Capacity). Teprve pak pro záměr vyčleňte konkrétní blok. Vyčleněný blok je záměr v plánu, ne nový závazek; sám nedokazuje, že se práce stihne. Přednost sama kapacitu nezaručí.
 
 Petr zjistí: v pondělí a v úterý večer má málo energie. Středa a čtvrtek jsou volné večery, sobota a neděle dopoledne volné.
 
@@ -87,24 +89,29 @@ Změna vlastního plánu ani odklad provedení závazek neruší. Když má změ
 
 ## Krok 8 — Udělejte reflexi (10 minut, na konci týdne)
 
-Na konci týdne oddělte tři věci:
+Na konci týdne oddělte čtyři věci:
 
-1. **Co se stalo.** Popište pozorování, ne soud o sobě.
-2. **Co si myslím, že to znamená.** Interpretace je váš výklad; může být i „nevím“.
-3. **Co z toho vyvodím.** Zvolte jednu změnu na příští týden.
+1. **Co jsem skutečně udělal?** Popište provedenou práci a pozorování, ne soud o sobě.
+2. **Jakou změnu jsem tím chtěl způsobit?** Vraťte se k záměru a k tomu, podle čeho jste chtěli poznat, že nastal.
+3. **Co se skutečně změnilo?** Může to být méně, víc nebo něco jiného; klidně řekněte „nevím“.
+4. **Co zatím nevím?** Neuzavřené pozorování není neúspěch.
 
-Petr napíše:
+Dokončená činnost sama neznamená, že nastal zamýšlený výsledek. Reflexe nevyžaduje měřitelné ukazatele ani zápis. Z odpovědí vyvoďte jednu změnu na příští týden.
 
-- **Co se stalo:** „Rozpočet odeslaný, běh jednou, nákup v sobotu. Ve středu jsem psal rozpočet po 20:00 a po 15 minutách přestal.“
-- **Co si myslím, že to znamená:** „Možná se mi večer po 20:00 psaní nedaří. Jeden večer to ale neprokazuje.“
+Petr si poznamená:
+
+- **Co jsem udělal:** „Rozpočet odeslaný, běh jednou, nákup v sobotu. Ve středu jsem psal rozpočet po 20:00 a po 15 minutách přestal.“
+- **Jakou změnu jsem chtěl způsobit:** „Chtěl jsem stihnout rozpočet do pátku a stihnout dva běhy.“
+- **Co se skutečně změnilo:** „Rozpočet jsem odeslal v pátek ráno, podruhé jsem neběžel.“
+- **Co zatím nevím:** „Nevím, jestli mi večer vadí čas, nebo únava. Jeden večer to neprokazuje.“
 - **Co z toho vyvodím:** „Příští týden zkusím psaní ráno a běh dvakrát ráno.“
 
-Jeden neúspěšný večer není důkaz, že večer pracovat neumíte. Pozorování popisuje, co se stalo; interpretace ho vysvětluje; rozhodnutí určuje další krok.
+Jeden neúspěšný večer není důkaz, že večer pracovat neumíte. Pozorování popisuje, co se stalo; interpretace ho vysvětluje; rozhodnutí určuje další krok. Když se stejný problém opakuje i po změně taktiky, nebo se vyvrátí důležitý předpoklad, vraťte se ke [strategické revizi](../how-to/strategic-review.md). Jeden špatný den není důvod měnit strategii.
 
 ## Jste hotovi, když…
 
 - máte seznam, ve kterém rozlišíte závazek, projekt a možnost,
-- máte jeden nebo dva týdenní záměry, rozhodnutí o tom, které dostanou kapacitu, a pojmenované odklady,
+- máte jeden nebo dva týdenní záměry, rozhodnutí o jejich přednosti a o tom, co se vejde do času a energie, a pojmenované odklady,
 - máte další krok s časem nebo podmínkou a umíte říct, co uděláte zítra,
 - máte jednu větu reflexe.
 

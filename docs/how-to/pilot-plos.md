@@ -1,6 +1,6 @@
 # Pilot PLOS — sedm dní
 
-**Typ dokumentu:** how-to • **Čas:** 30 minut první den, 20–30 minut jednou v týdnu, 2–5 minut denně, 10 minut na konci • **Pomůcky:** papír a pero; zápis je volitelný • **Výsledek:** zkušenost s PLOS a rozhodnutí, co si ponechat.
+**Typ dokumentu:** how-to • **Čas:** 30–45 minut první den, protože úvodní orientace a první naplánování mohou být jedna relace; potom 2–5 minut denně a 10 minut na konci • **Pomůcky:** papír a pero; zápis je volitelný • **Výsledek:** zkušenost s PLOS a rozhodnutí, co si ponechat.
 
 ## Co tím vyřešíte
 
@@ -16,12 +16,12 @@ Jeden běžný týden, jeden list papíru a vaše skutečné závazky. Nepotřeb
 
 ## Postup
 
-1. **První den — vyberte směr a skutečné závazky (30 minut).** Pojmenujte jednu hodnotu, kterou chcete žít, a jeden záměr, který z ní na tento týden plyne. Pokud záměr nemáte, pokračujte bez něj. Projděte závazky, které skutečně máte vůči jiným lidem nebo z povinnosti; stačí ústně. Pomůže [Od hodnot k jednání](../tutorials/from-values-to-action.md) a první dva kroky [Prvního týdne](../tutorials/first-week.md).
-2. **Jednou — naplánujte týden (20–30 minut).** Projděte [Týdenní plánování](weekly-planning.md). Zkontrolujte závazky, odhadněte kapacitu, zvolte jednu prioritu (pokud máte záměr) a určete jeden další krok. Nechte rezervu. Když se priorita nevejde, pojmenujte konflikt; nezvyšujte prioritu.
+1. **První den — vyberte směr a skutečné závazky (20–30 minut).** Pojmenujte jednu hodnotu, kterou chcete žít, a jeden záměr, který z ní na tento týden plyne. Pokud záměr nemáte, pokračujte bez něj. Projděte závazky, které skutečně máte vůči jiným lidem nebo z povinnosti; stačí ústně. Pomůže [Od hodnot k jednání](../tutorials/from-values-to-action.md) a první dva kroky [Prvního týdne](../tutorials/first-week.md). Úvodní orientaci a první naplánování můžete udělat v jedné relaci; nejde o dvě povinné schůzky.
+2. **První den nebo jednou — naplánujte týden (20–30 minut, můžete spojit s krokem 1).** Projděte [Týdenní plánování](weekly-planning.md). Zkontrolujte závazky a to, co potřebuje péči, odhadněte kapacitu, zvolte jednu prioritu (pokud máte záměr) a určete jeden další krok. Nechte rezervu. Když se priorita nevejde, pojmenujte konflikt; nezvyšujte prioritu.
 3. **Denně — rozhodněte v malém (2–5 minut).** Použijte [Denní rozhodování](daily-review.md). Když máte málo energie, odpovězte jen na tři otázky minimální úrovně. Nic nedoplňujte zpětně.
 4. **Když přijde podnět — vyjasněte ho (2–5 minut).** Použijte [Zpracování nového podnětu](process-input.md). Rozhodněte, zda jde o informaci, odmítnutí, odklad, přijetí odpovědnosti nebo dobrovolné jednání. Zachycení samo závazek nevytváří.
 5. **Uprostřed týdne — podívejte se na rozpracovanost (5–10 minut).** Použijte [Řízení rozpracované práce](manage-workflow.md). Oddělte, co je zahájené a neuzavřené, od toho, co právě vyžaduje pozornost. Pozastavení ani blokace není dokončení.
-6. **Na konci — zhodnoťte týden (10 minut).** Odpovězte podle kroku 6 [Týdenního plánování](weekly-planning.md): co se stalo, co z toho vyvozuji a co změním. Oddělte dokončenou práci od dosaženého výsledku. Když se stejný vzorec opakuje i po změně taktiky, otevřete [Strategickou revizi](strategic-review.md).
+6. **Na konci — zhodnoťte týden (10 minut).** Odpovězte podle kroku 6 [Týdenního plánování](weekly-planning.md): co jste skutečně udělali, jakou změnu jste chtěli způsobit, co se změnilo a co zatím nevíte. Oddělte dokončenou práci od dosaženého výsledku. Když se stejný vzorec opakuje i po změně taktiky, otevřete [Strategickou revizi](strategic-review.md).
 
 ## Očekávaný výsledek
 
@@ -33,7 +33,7 @@ Nedoplňujte historii. Začněte dnešním stavem a pokračujte dalším krokem.
 
 ## Jak zhodnotit přínos a režii
 
-Odpovězte na konci týdne na pět otázek. Odpovědi pište vlastními slovy; není potřeba je skórovat.
+Odpovězte na konci týdne na pět otázek. Odpovězte vlastními slovy, klidně ústně; není potřeba je skórovat.
 
 1. Pomohl vám PLOS vybrat jednání, které mělo smysl? Uveďte konkrétní situaci.
 2. Bylo jasné, co udělat dál? Kde jste museli hádat?
@@ -43,7 +43,7 @@ Odpovězte na konci týdne na pět otázek. Odpovědi pište vlastními slovy; n
 
 ## Jak zaznamenat problémy
 
-Stačí jedna věta denně: co jste zvolili a proč. Když vás něco zdrželo, poznamenejte to jednou větou na konci dne. Nevytvářejte formulář ani seznam dluhů. Pro závěrečné zhodnocení si vystačíte s poznámkami, které jste skutečně použili.
+Tato část je volitelná. Denní věta o problémech není podmínkou pilotu. Pokud vám zápis pomáhá v rozhodování, stačí jedna věta denně: co jste zvolili a proč. Když vás něco zdrželo, poznamenejte to jednou větou na konci dne. Nevytvářejte formulář ani seznam dluhů. Pro závěrečné zhodnocení si vystačíte s poznámkami, které jste skutečně použili; vyžadujte jen tolik záznamu, kolik vám pomáhá v rozhodování a v reflexi.
 
 ## Co si ponechat a co zjednodušit
 
