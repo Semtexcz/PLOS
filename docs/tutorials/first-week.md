@@ -1,8 +1,10 @@
 # První týden s PLOS
 
-**Typ dokumentu:** tutorial • **Čas:** přibližně 45 minut dnes a 5 minut denně • **Pomůcky:** papír a pero
+**Typ dokumentu:** tutorial • **Čas:** přibližně 40–45 minut první den, 2–5 minut denně a 10 minut na konci týdne • **Pomůcky:** papír a pero
 
-PLOS je metodika pro rozhodování o čase, pozornosti a závazcích. Naučíte se rozpoznat priority, oddělit závazky od projektů a možností, zvolit týdenní záměr, určit další krok a udělat reflexi. Projděte fiktivní příklad a potom stejné kroky zopakujte s vlastními položkami.
+PLOS je metodika pro rozhodování o čase, pozornosti a závazcích. Na fiktivním příkladu si vyzkoušíte rozlišení závazku, projektu a možnosti, týdenní záměr, další krok a reflexi. Potom je zopakujte s vlastními položkami.
+
+Kroky 1–6 udělejte první den. Krok 7 procházejte během týdne a krok 8 na jeho konci.
 
 ## Krok 1 — Zapište, co právě nesete (10 minut)
 
@@ -22,13 +24,17 @@ Seznam není plán ani závazek. Je to materiál k rozhodnutí.
 
 ## Krok 2 — Oddělte závazky, projekty a možnosti (5 minut)
 
-Položte u každé věci dvě otázky. Slíbil jsem to, nebo to vyplývá z existující povinnosti? Jde o ohraničenou práci, kterou potřebuji koordinovat?
+U každé položky si položte dvě otázky. Slíbil jsem to, nebo to vyplývá z existující povinnosti? Jde o ohraničenou práci, kterou potřebuji koordinovat?
 
-- **Závazek** (Commitment) je odpovědnost něco vykonat, zajistit nebo udržovat. Má původ a podmínku splnění. Položky 1 a 2 jsou závazky: matka čeká nákup, vedoucí čeká rozpočet.
+- **Závazek** (Commitment) je odpovědnost něco vykonat, zajistit nebo udržovat. Má původ a podmínku splnění nebo zániku; termín mít nemusí. Položky 1 a 2 jsou závazky.
 - **Projekt** (Project) je ohraničená práce s rozpoznatelným dokončením. Položky 3 a 6 jsou projekty; nikdo je zatím nečeká v pevném termínu.
 - **Možnost** je něco, co chcete, ale nikdo to nečeká a sami jste se k tomu výslovně nezavázali. Položky 4, 5 a 7 jsou možnosti.
 
-„Ano“ na první otázku znamená závazek. „Ano“ jen na druhou znamená projekt. „Ano“ na obě znamená závazek plněný projektem. Oprava kohoutku je projekt; závazkem se stane dohodou s člověkem, se kterým sdílíte domácnost. Běžný závazek nepotřebuje strategický cíl ani projekt.
+Závazek a projekt se nevylučují. „Ano“ na obě otázky znamená závazek plněný projektem. Projekt může existovat bez závazku, závazek bez projektu; jedna činnost nebo projekt může naplnit závazek.
+
+Oprava kohoutku je projekt. Závazkem se stane dohodou s člověkem, se kterým sdílíte domácnost. Běžný závazek nepotřebuje strategický cíl ani projekt.
+
+Zapsání na seznam samo závazek nevytváří. Vzniká přijetím odpovědnosti nebo existující povinností; podněty řeší krok 7.
 
 ## Krok 3 — Rozpoznejte, co je právě důležité (5 minut)
 
@@ -38,7 +44,7 @@ U každé položky si položte tři otázky:
 2. Co se zanedbáním zhorší?
 3. Co odpovídá tomu, co je pro mě teď důležité?
 
-Petr odpovídá: rozpočet má termín a dopad na tým, nákup na matku, pohyb (položka 4) se při zanedbání zhorší. Prezentace, kniha a kohoutek počkají. Výsledkem je krátký seznam důležitého s důvodem.
+Petr odpovídá: rozpočet má termín a dopad na tým, nákup na matku, pohyb se zanedbáním zhorší. Prezentace, kniha a kohoutek počkají. Výsledkem je krátký seznam důležitého s důvodem.
 
 ## Krok 4 — Zvolte týdenní záměr (5 minut)
 
@@ -56,7 +62,7 @@ Pojmenujte, kdy nebo za jakých podmínek se k položce vrátíte.
 
 Podívejte se na skutečný týden a svou kapacitu (Capacity). Kdy máte volný blok? Jak na tom budete s energií? Co už je pevné?
 
-Petr zjistí: v pondělí a v úterý večer má málo energie. Středa a čtvrtek jsou volné večery, sobota a neděle dopoledne volné. Cesta k matce trvá 40 minut.
+Petr zjistí: v pondělí a v úterý večer má málo energie. Středa a čtvrtek jsou volné večery, sobota a neděle dopoledne volné.
 
 Nákup, rozpočet a dva běhy se vejdou, pokud rozpočet udělá ve středu a nákup ve čtvrtek. Pátek zůstane prázdný jako rezerva na to, co neumíte předpovědět.
 
@@ -73,19 +79,27 @@ Petr má čtyři kroky: rozpočet ve středu 19:00, nákup ve čtvrtek 17:00, b�
 
 ## Krok 7 — Prožijte týden (denně 2–5 minut)
 
-Ráno si přečtěte závazky a krok na dnešní den. Novou žádost přijměte jako závazek, odložte, nebo odmítněte. Večer jednou větou poznamenejte, co se stalo.
+Ráno si přečtěte závazky a krok na dnešní den. Novou žádost nebo podnět nemusíte přijmout jako závazek: můžete je vyjasnit, ponechat jako nezávaznou možnost, přijmout odpovědnost, odmítnout, nebo odložit rozhodnutí. Zachycení podnětu samo závazek nevytváří. Večer jednou větou poznamenejte, co se stalo.
 
-Ve středu Petr rozpočet nedokončí a dodělá ho ve čtvrtek ráno. Ve čtvrtek matka onemocní a nákup se přesouvá na sobotu. To není selhání plánu. Změnily se okolnosti a závazek trvá.
+Ve středu Petr rozpočet nedokončí a dodělá ho ve čtvrtek ráno. Ve čtvrtek matka onemocní a Petr se s ní domluví na sobotním nákupu. To není selhání plánu. Změnil se čas provedení, závazek trvá.
 
-## Krok 8 — Udělejte reflexi (10 minut)
+Změna vlastního plánu ani odklad provedení závazek neruší. Když má změna ovlivnit to, co jste slíbili jinému člověku, navrhněte ji a proveďte až po dohodě. Teprve dohodnutá změna mění závazek; samotný úmysl nestačí.
 
-Na konci týdne si odpovězte na tři otázky:
+## Krok 8 — Udělejte reflexi (10 minut, na konci týdne)
 
-1. Co se stalo? Popište pozorování, ne soud o sobě.
-2. Co z toho vyvozuji? Interpretace může být i „nevím“.
-3. Co změním příští týden? Jedna změna stačí.
+Na konci týdne oddělte tři věci:
 
-Petr napíše: „Rozpočet odeslaný, běh jednou (druhý nevyšel), nákup v sobotu. Večer po 20:00 nemám energii na psaní. Příští týden dám psaní na ráno a běh dvakrát ráno.“ První dvě věty jsou pozorování, třetí rozhodnutí.
+1. **Co se stalo.** Popište pozorování, ne soud o sobě.
+2. **Co si myslím, že to znamená.** Interpretace je váš výklad; může být i „nevím“.
+3. **Co z toho vyvodím.** Zvolte jednu změnu na příští týden.
+
+Petr napíše:
+
+- **Co se stalo:** „Rozpočet odeslaný, běh jednou, nákup v sobotu. Ve středu jsem psal rozpočet po 20:00 a po 15 minutách přestal.“
+- **Co si myslím, že to znamená:** „Možná se mi večer po 20:00 psaní nedaří. Jeden večer to ale neprokazuje.“
+- **Co z toho vyvodím:** „Příští týden zkusím psaní ráno a běh dvakrát ráno.“
+
+Jeden neúspěšný večer není důkaz, že večer pracovat neumíte. Pozorování popisuje, co se stalo; interpretace ho vysvětluje; rozhodnutí určuje další krok.
 
 ## Jste hotovi, když…
 
@@ -96,7 +110,7 @@ Petr napíše: „Rozpočet odeslaný, běh jednou (druhý nevyšel), nákup v s
 
 ## Když to nevyjde
 
-Když týden nezvládnete, přejděte na minimální úroveň: co dnes nesmíte minout a jaký je nejmenší další krok. Historii nedoplňujte.
+Když týden nezvládnete, přejděte na minimální úroveň používání: co dnes nesmíte minout a jaký je nejmenší další krok. Historii nedoplňujte.
 
 ## Další krok
 

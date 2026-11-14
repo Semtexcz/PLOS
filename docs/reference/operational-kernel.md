@@ -9,6 +9,7 @@ Uživatel nemusí znát všechny doménové pojmy ani jejich anglické názvy, a
 ## Co jádro je a co není
 
 - Je to nejmenší sada otázek a výstupů, která umožní rozhodnout se a jednat.
+- Je to návrh provozního postupu k ověření, nikoli závazná architektura. Závazné zůstávají definice GLO-01, vztahy a invarianty DOM-01 a odpovědnosti ARCH-01.
 - Není to povinný postup pro každodenní použití ani pět samostatných evidencí.
 - Není to algoritmus priorit, model stavů ani návrh aplikace.
 
@@ -75,7 +76,7 @@ Nedělejte toto: nezvyšujte prioritu místo snížení rozsahu, neslibujte dohn
 
 - Závazky platí dál, i když je přestanete sledovat. Přestat sledovat není splnit.
 - Na začátku Orientace a Kapacity zkontrolujte závazky s blízkým termínem nebo dopadem na druhé.
-- Odklad závazku je samostatné rozhodnutí s důvodem. Změna projektu, cíle či strategie ho neruší (INV-06).
+- Odklad provedení závazku je samostatné rozhodnutí s důvodem. Změna projektu, cíle či strategie ho neruší (INV-06).
 - Závazek může skončit splněním, platným přejednáním nebo jiným skutečným zánikem odpovědnosti. Samotný úmysl nestačí.
 - Běžný závazek nepotřebuje strategický cíl ani projekt (INV-07).
 
@@ -85,9 +86,9 @@ Nedělejte toto: nezvyšujte prioritu místo snížení rozsahu, neslibujte dohn
 
 | Úroveň | Kdy ji použít | Funkce a rozsah | Typický čas | Co nevyžaduje |
 | --- | --- | --- | --- | --- |
-| Minimální (Minimal Mode) | přetížení, nemoc, krize, návrat po pauze | Orientace v rozsahu „co dnes nesmím minout“, Výběr jedné věci, Realizace jednoho kroku; Kapacita slovně; Adaptace není nutná | 1–5 minut denně | historii, plán, kategorizaci, zápis |
-| Standardní (Standard Mode) | běžný týden | denně všech pět funkcí v krátké formě; týdně Orientace, Výběr, Kapacita a Adaptace v širším rozsahu | 5 minut denně, 20–30 minut týdně | aplikaci, metriky, strategii |
-| Rozšířená (Extended Mode) | změna směru, experiment, větší rozhodnutí | všechny funkce a navíc scénáře, předpoklady a podrobnější review | nárazově | formální model, skórování |
+| Minimální | přetížení, nemoc, krize, návrat po pauze | Orientace v rozsahu „co dnes nesmím minout“, Výběr jedné věci, Realizace jednoho kroku; Kapacita slovně; Adaptace není nutná | 1–5 minut denně | historii, plán, kategorizaci, zápis |
+| Standardní | běžný týden | denně všech pět funkcí v krátké formě; týdně Orientace, Výběr, Kapacita a Adaptace v širším rozsahu | 5 minut denně, 20–30 minut týdně | aplikaci, metriky, strategii |
+| Rozšířená | změna směru, experiment, větší rozhodnutí | všechny funkce a navíc scénáře, předpoklady a podrobnější review | nárazově | formální model, skórování |
 
 Pravidla přepínání:
 

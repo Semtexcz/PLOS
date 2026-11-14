@@ -10,7 +10,7 @@
 4. **Určete další krok (1 minuta).** Napište jednu konkrétní činnost s časem nebo podmínkou. „Ve 14:00 zavolám a domluvím termín“ je krok. „Vyřešit telefonáty“ není.
 5. **Ukončete den (1 minuta).** Věnujte minutu tomu, co se skutečně stalo. Stačí věta: co vyšlo, co se změnilo, co zůstalo. Nic nedoplňujte zpětně.
 
-## Omezený režim
+## Minimální úroveň používání
 
 Když je čas nebo energie výrazně nižší, zkraťte postup na tři otázky:
 
@@ -18,7 +18,7 @@ Když je čas nebo energie výrazně nižší, zkraťte postup na tři otázky:
 2. Jaký je nejmenší další krok?
 3. Co vědomě odkládám a do kdy?
 
-Odpovězte si je kdykoli během dne, klidně ústně. Minulost nerekonstruujte. Odklad pojmenujte, ale nevytvářejte seznam dluhů, který byste museli dohnat. Tato zkrácená verze odpovídá minimální úrovni používání.
+Odpovězte si je kdykoli během dne, klidně ústně. Minulost nerekonstruujte. Odklad pojmenujte, ale nevytvářejte seznam dluhů, který byste museli dohnat. Tato zkrácená verze je minimální úroveň používání.
 
 ## Očekávaný výsledek
 
@@ -32,7 +32,7 @@ Odpovězte si je kdykoli během dne, klidně ústně. Minulost nerekonstruujte. 
 - **Položek je příliš:** vyberte jednu. Ostatní se tím nezmění na splněné, jen se dnes nevykonají.
 - **Nemáte energii:** snižte rozsah nebo odpočívejte. Odpočinek je platný výsledek, ne selhání.
 - **Dvě věci se bijí:** pojmenujte konflikt a rozhodněte, co zmenšíte, odložíte nebo s kým přejednáte. Neřešený konflikt je přípustný stav.
-- **Nechcete plán dodržet:** rozhodnutí změnit plán je vaše. Zapište důvod a upravte závazek, ne skutečnost.
+- **Nechcete plán dodržet:** rozhodnutí změnit vlastní plán je vaše. Zapište důvod a upravte plán, ne skutečnost. Odklad provedení je samostatné rozhodnutí. Když změna ovlivní to, co jste slíbili jinému člověku, navrhněte ji; závazek se mění až dohodou.
 
 ## Související
 

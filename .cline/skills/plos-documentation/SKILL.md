@@ -7,7 +7,7 @@ description: Vytváří, reviduje a audituje uživatelskou dokumentaci PLOS podl
 
 Tento skill shrnuje pravidla pro uživatelskou dokumentaci PLOS. Je nezávislý na poskytovateli LLM a na konkrétním nástroji. Uživatelská dokumentace je v češtině; ustálené anglické názvy konceptů se uvádějí v závorce.
 
-Autoritativní zdroje jsou [GLO-01](../../glossary.md) pro definice, [DOM-01](../../03-architecture/preliminary-domain-model.md) pro vztahy a invarianty a [ARCH-01](../../03-architecture/conceptual-architecture.md) pro odpovědnosti. Uživatelský dokument je provozní pohled, nikoli nový zdroj pravdy.
+Autoritativní zdroje jsou [GLO-01](../../../glossary.md) pro definice, [DOM-01](../../../03-architecture/preliminary-domain-model.md) pro vztahy a invarianty a [ARCH-01](../../../03-architecture/conceptual-architecture.md) pro odpovědnosti. Uživatelský dokument je provozní pohled, nikoli nový zdroj pravdy.
 
 ## 1. Vyberte typ dokumentu
 
@@ -67,7 +67,7 @@ Proveďte ruční reader test. Představte si čtenáře, který PLOS nezná a n
 4. Co udělá, když mu chybí čas, energie nebo informace?
 5. Které pojmy musí znát předem? Pokud ano, dokument je vysvětluje, nebo na ně odkazuje?
 
-Dokument projde, když čtenář odpoví bez čtení architektury a bez dohadování. Zvlášť ověřte omezený režim: musí být použitelný bez rekonstrukce minulosti.
+Dokument projde, když čtenář odpoví bez čtení architektury a bez dohadování. Zvlášť ověřte minimální úroveň používání: musí být použitelná bez rekonstrukce minulosti.
 
 Při pochybnostech zkraťte, ne přidejte. Odstraňte věty, které by platily v libovolném projektu („je důležité mít přehled“), a nahraďte je konkrétní instrukcí, příkladem nebo odkazem.
 

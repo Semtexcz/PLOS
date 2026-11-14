@@ -8,6 +8,8 @@ Návrh kombinuje hierarchii záměrů s distribuovanými funkčními odpovědnos
 
 ## Jak dokumentaci číst
 
+**Používáte PLOS, ne architekturu?** [Uživatelská dokumentace](docs/README.md) nabízí návrh provozního postupu: tutorial, denní rozhodování, týdenní plánování a provozní jádro.
+
 | Artefakt | Obsah |
 | --- | --- |
 | [System Charter](01-foundations/system-charter.md) | Problém, účel, hranice, aktéři, předpoklady a úspěch |

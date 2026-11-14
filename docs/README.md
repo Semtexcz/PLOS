@@ -8,7 +8,7 @@ PLOS není aplikace. Funguje s papírem, poznámkami nebo bez zápisu. Nevyžadu
 
 | Chci… | Dokument | Čas |
 | --- | --- | --- |
-| poprvé zkusit PLOS | [První týden s PLOS](tutorials/first-week.md) | 45 minut a potom 5 minut denně |
+| poprvé zkusit PLOS | [První týden s PLOS](tutorials/first-week.md) | 40–45 minut první den, potom 2–5 minut denně a 10 minut na konci týdne |
 | rozhodnout, co dělat dnes | [Denní rozhodování](how-to/daily-review.md) | 5 minut |
 | naplánovat týden | [Týdenní plánování](how-to/weekly-planning.md) | 20–30 minut |
 | pochopit pravidla a pojmy | [Provozní jádro](reference/operational-kernel.md) | 15 minut |
@@ -27,6 +27,8 @@ Doporučené pořadí je tutorial, denní rozhodování, týdenní plánování 
 Uživatelské návody jsou v češtině. U odborných pojmů může být v závorce anglický název, pod kterým je pojem veden v architektuře.
 
 Uživatelská dokumentace je provozní pohled, ne zdroj definic. Závazné definice obsahuje [slovník](../glossary.md), vztahy a invarianty [doménový model](../03-architecture/preliminary-domain-model.md), odpovědnosti a rozhraní [konceptuální architektura](../03-architecture/conceptual-architecture.md).
+
+Návody v této složce jsou návrh provozního postupu k ověření, nikoli závazná architektura. Tři úrovně používání (minimální, standardní, rozšířená) patří k tomuto návrhu a nejsou totéž jako provozní režimy OP-01 až OP-07; rozdíl vysvětluje [provozní jádro](reference/operational-kernel.md#tři-úrovně-používání).
 
 ## Co zde zatím není
 
