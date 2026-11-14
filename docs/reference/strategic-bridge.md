@@ -22,7 +22,7 @@ Reflexe je společná (SS-06); cestu znázorňuje [tutorial](../tutorials/from-v
 | Vize | revidovatelná představa žádoucího stavu | obraz budoucnosti, ne plán |
 | Strategie | volba cesty včetně toho, čemu se nevěnuji, s předpoklady | kandidátní cíle a experimenty |
 | Projekt nebo experiment | organizace práce, nebo ověření otázky s mezí ukončení | další kroky; poznatek může cestu potvrdit, změnit i nechat otevřenou |
-| Cíl a zamýšlený výsledek | konkrétní změna s horizontem a způsobem posouzení | týdenní priorita a nárok na kapacitu |
+| Cíl a zamýšlený výsledek | konkrétní změna s horizontem a způsobem posouzení | nárok na kapacitu; týdenní priorita rozhodne, který záměr ji dostane |
 | Týdenní priorita | co dostane omezenou kapacitu vedle závazků | další krok a pojmenované odklady |
 | Další krok | konkrétní jednání s časem nebo podmínkou | provedení, nebo vědomá volba nejednat |
 
@@ -50,7 +50,7 @@ Při volbě alternativ se ptejte: Podporuje cesta hodnotu? Co vylučuje? Jak vel
 | FB-02 taktická | týden, portfolio, kapacita | Co změnit v týdnu nebo ve výběru? | priority, rozsah, výběr záměrů |
 | FB-03 strategická | hodnoty, vize, předpoklady | Je zvolená cesta stále vhodná? | strategie, výsledek, vyjádření směru |
 
-FB-04 se týká režie metodiky, ne směru života. Strategickou revizi otevřete, když se vzorec opakuje tři týdny navzdory změně taktiky, když experiment vyvrátil klíčový předpoklad, když se trvale změnily okolnosti, nebo když se hodnota přestala objevovat i po zmenšení rozsahu.
+FB-04 se týká režie metodiky, ne směru života. Strategickou revizi otevřete, když se vzorec opakuje v dalších týdnech navzdory změně taktiky, když experiment vyvrátil klíčový předpoklad, když se trvale změnily okolnosti, nebo když se hodnota přestala objevovat i po zmenšení rozsahu. Počet týdnů není univerzální pravidlo; záleží na délce vzorce, kontextu a vaší zkušenosti, kdy už nejde o náhodu.
 
 Jeden den ani nedostatek kapacity strategii nemění; řeší se rozsahem nebo odkladem. Kadence je příklad, ne povinnost; zpětná vazba nemusí projít všemi úrovněmi.
 
@@ -78,7 +78,7 @@ Každá činnost nemusí být trasovatelná ke strategickému cíli. Trasovateln
 - Nejde o bodovací model; rozhodnutí zůstávají kvalitativní a vratná.
 - Dvanáct týdnů je jedna z možných délek horizontu, ne norma.
 - Návaznost nezakládá nový formulář, evidenci, aplikaci ani softwarovou komponentu.
-- [Tutorial prvního týdne](../tutorials/first-week.md) nazývá týdenní prioritu „týdenní záměr“; zdejší rozlišení je redakční rozdíl k samostatné opravě.
+- [Tutorial prvního týdne](../tutorials/first-week.md) i tato reference používají oba pojmy ve stejném smyslu: týdenní záměr je kandidátní zamýšlený výsledek; teprve týdenní priorita rozhoduje o alokaci kapacity.
 - Otevřené: spouštěče revizí (OQ-02), hloubka záznamu (OQ-03).
 
 ## Autoritativní zdroje

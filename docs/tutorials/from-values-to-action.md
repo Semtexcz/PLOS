@@ -24,7 +24,7 @@ Jana napíše: „Za pět let chci, aby v naší obci fungovalo páteční posez
 
 Napište dvě možnosti a u každé odpovězte: Podporuje to hodnotu? Co tím vylučuji? Co se stane, když se to nepovede?
 
-Jana zvažuje dvě cesty. První je založit klub hned a hledat prostory. Druhá je nejdřív zjistit, jestli o pravidelné setkávání vůbec stojí zájem. Druhá varianta je menší a rychleji ukáže, zda má smysl. Jana zvolí experiment s otázkou „přijde někdo opakovaně?“ a mezí ukončení: po třech rozhovorech a jednom zkušebním posezení.
+Jana zvažuje dvě cesty. První je založit klub hned a hledat prostory. Druhá je nejdřív zjistit, jestli o pravidelné setkávání vůbec stojí zájem. Druhá varianta je menší a rychleji ukáže, zda má smysl. Jana zvolí experiment s otázkou „přijde někdo opakovaně?“ a mezí ukončení: po třech rozhovorech a dvou zkušebních posezeních. Otázka o opakování potřebuje aspoň dvě setkání; jedno posezení ji nemůže vyhodnotit.
 
 Experiment není závazek na roky. Když potřebujete hlavně poznatek, pojmenujte, kdy skončí.
 
@@ -36,7 +36,7 @@ Jana si zapíše: „Do konce listopadu vím, jestli o páteční posezení je z
 
 ## Krok 5 — Převeďte ho do týdenní priority (5 minut)
 
-Podívejte se na skutečný týden: pevné body, energii a závazky. Priorita nepřidá čas. Co se vejde vedle toho, co už platí?
+Podívejte se na skutečný týden: pevné body, energii a závazky. Priorita nepřidá čas. Co se vejde vedle toho, co už platí? Záměr z kroku 4 zůstává stejný; týdenní priorita jen rozhoduje, co z něj dostane kapacitu.
 
 Janin týden: ve čtvrtek vozí dceru na plavání a matce slíbila nákup, v práci má uzávěrku do pátku. Volný je středeční večer a sobotní dopoledne.
 
@@ -54,7 +54,7 @@ Na konci týdne oddělte: co se stalo, co si o tom myslíte a co vyvodíte.
 
 Jana poznamená: proběhl jeden rozhovor, druhý ne, zkušební posezení ne. Výklad: po 19. hodině nemá na telefon energii, jeden večer to ale neprokazuje. Rozhodne se přesunout hovory na sobotní dopoledne a zmenšit první posezení na čtyři lidi.
 
-Změnila taktiku, ne strategii ani hodnotu. Kdyby se stejný vzorec opakoval třetí týden, otevře strategickou revizi: možná není problém v čase, ale v tom, že jí rozhovory nesedí.
+Změnila taktiku, ne strategii ani hodnotu. Kdyby se stejný vzorec opakoval i v dalších týdnech navzdory změně taktiky, otevře strategickou revizi: možná není problém v čase, ale v tom, že jí rozhovory nesedí. Počet týdnů je ilustrace, ne univerzální práh; rozhoduje trvání vzorce.
 
 ## Diagram: cesta od hodnoty k dalšímu kroku
 
