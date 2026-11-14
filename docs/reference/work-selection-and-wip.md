@@ -10,15 +10,17 @@ Stránka popisuje, jak se kandidátní práce stává zahájenou a co znamená r
 | --- | --- | --- |
 | Kandidátní práce | možnost nebo projekt nevybraný k provedení | nárok na kapacitu ani zahájená práce |
 | Připravená práce | vybraný záměr nebo krok, u kterého se posuzuje proveditelnost | ještě zahájená práce |
-| Rozpracovaná práce | skutečně zahájená práce vyžadující pozornost nebo kapacitu | každá vybraná nebo odložená věc |
-| Čekání nebo blokování | práce nemůže pokračovat za současných podmínek | dokončení ani automatický důvod k nové práci |
+| Rozpracovaná práce | skutečně zahájená a dosud neukončená práce | totéž co práce právě vyžadující pozornost |
+| Čekání nebo blokování | práce nemůže pokračovat za současných podmínek | dokončení, ukončení rozsahu ani automatický důvod k nové práci |
 | Dokončení | skutečně dokončený rozsah práce | důkaz dosažení zamýšleného výsledku |
 
-Pohledy popisují situaci; nejsou to nové entity ani přechody.
+Pohledy popisují situaci; nejsou to nové entity ani přechody. Práce může být nezačatá, zahájená a pokračující, zahájená a pozastavená nebo blokovaná, skutečně dokončená, nebo vědomě ukončená či opuštěná. Ani to nejsou povinné stavy. Pozastavení ani blokace práci neuzavírá a z rozpracovanosti ji neodstraňuje; mizí z ní až skutečným dokončením nebo vědomým ukončením rozsahu.
 
 ## Co se započítává do WIP
 
 Do rozpracovanosti patří zahájená a neuzavřená práce ve stejném rozsahu. Stejný rozsah zůstává jedním záznamem, i když podporuje dva záměry, plyne ze závazku a zároveň z projektu, nebo se objeví v jiném pohledu ([INV-03](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)/15).
+
+Ptejte se odděleně: kolik práce je zahájené a dosud neukončené, a kolik z ní právě vyžaduje aktivní pozornost nebo alokaci. Odpovědi se mohou lišit. Pozastavená práce může uvolnit bezprostřední kapacitu, aniž by zmizela z celkové rozpracovanosti.
 
 Nezapočítává se zachycený podnět, kandidát, informace ani dokončená práce; připravená práce se započítá až zahájením. Rozsah WIP závisí na pohledu: portfoliový ([SS-03](../../03-architecture/conceptual-architecture.md#ss-03--goal--portfolio-management)) nebo operativní ([SS-05](../../03-architecture/conceptual-architecture.md#ss-05--execution--commitment-management)).
 
@@ -29,12 +31,12 @@ Při výběru rozlišujte čtyři věci: důležitost (co se zanedbáním zhorš
 - Vyšší priorita nevytváří kapacitu; neslučitelné nároky se nesmějí prohlásit za proveditelné změnou pořadí ([INV-16](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 - Strategie automaticky nepřeváží existující povinnost; vytlačení dlouhodobého směru je vědomé rozhodnutí.
 - Naléhavý podnět může změnit dnešní volbu, ale jen po posouzení závazků a kapacity.
-- Rozpracovanou práci lze dokončit, zmenšit nebo uvolnit; uvolnění je platná volba.
+- Rozpracovanou práci lze dokončit, zmenšit rozsah, pozastavit nebo vědomě opustit; pozastavení není dokončení.
 - Nevyřešený konflikt je přípustný stav. Bodování, pořadí ani pevné limity výběr nenahrazují.
 
 ## Blokování a čekání
 
-Blokovaná práce není dokončená a sama nezakládá novou práci. Pokud k ní držíte odpovědnost nebo pozornost, zůstává v rozpracovanosti, i když nepokročí. Bez odpovědnosti jde o nezávazné čekání.
+Blokovaná práce není dokončená a sama nezakládá novou práci. Pokud jste ji zahájili, zůstává zahájená a neukončená, i když nepokročí; pozastavení ani blokace ji z rozpracovanosti neodstraňují. Odpovědnost ze závazku trvá bez ohledu na pozastavení projektu. Opuštění rozsahu práce závazek neruší; ten končí splněním, platným přejednáním nebo jiným skutečným zánikem odpovědnosti. Bez závazku se rozhodujete, zda práci věnujete pozornost, nebo její rozsah vědomě opustíte.
 
 U blokace hledejte krok nezávislý na překážce. Každé čekání doplňte podmínkou návratu. Druhy čekání popisuje [Podněty, závazky a další kroky](commitment-workflow.md#čekání-a-kapacitní-nároky).
 
@@ -48,7 +50,7 @@ Dokončení uvolňuje pozornost i kapacitu, ne zamýšlený účinek.
 
 Zdrojový nárok (Resource Demand) je potřeba zdroje, kapacita (Capacity) dostupnost zdroje a alokace (Allocation) rozhodnutí zdroj vyčlenit; pozorovaná spotřeba je samostatný údaj ([INV-12](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)). Projekt může mít nenulový nárok, i když není aktivní nebo nemá přidělenou kapacitu. Neaktivita nespotřebovává plánovanou kapacitu ani neruší nárok ([INV-11](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
-Rozpracovanost není alokace: zahájená práce nemusí být v plánu alokována a alokace není slib ani skutečnost. Stejný nárok se nezapočítá dvakrát kvůli dvěma záměrům ([INV-15](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
+Rozpracovanost není alokace: zahájená práce nemusí být v plánu alokována a alokace není slib ani skutečnost. Alokace sama nový závazek nevytváří. Stejný nárok se nezapočítá dvakrát kvůli dvěma záměrům ([INV-15](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
 
 ## Návaznosti na architekturu
 
@@ -65,8 +67,8 @@ Ověřované invarianty: [INV-03](../../03-architecture/preliminary-domain-model
 
 - Neexistuje univerzální počet sloupců, WIP limit ani prahová hodnota přetížení ([ADR-04](../../05-decisions/decision-log.md#adr-04--vícezdrojová-kapacita-bez-univerzálního-skóre-priorit)).
 - Vizualizace je mentální, textová nebo grafická; tabule ani aplikace nejsou podmínkou.
-- Kdy je rozpracovanost vysoká, zůstává na úsudku člověka ([OQ-03](../../05-decisions/open-questions.md#otevřené-otázky)).
-- Otevřené zůstávají prahy a spouštěče review ([OQ-01](../../05-decisions/open-questions.md#otevřené-otázky), [OQ-02](../../05-decisions/open-questions.md#otevřené-otázky)).
+- Kdy je rozpracovanost vysoká, zůstává na úsudku člověka. Registr otevřených otázek pro tento práh nemá položku, jde o lokální otevřený problém bez přiděleného ID.
+- Otevřené zůstávají kadence a spouštěče revize ([OQ-02](../../05-decisions/open-questions.md#otevřené-otázky)) a přijatelná režie a hloubka trasovatelnosti ([OQ-03](../../05-decisions/open-questions.md#otevřené-otázky)).
 
 ## Autoritativní zdroje
 

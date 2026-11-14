@@ -36,7 +36,7 @@ Jana si zapíše: „Do konce listopadu vím, jestli o páteční posezení je z
 
 ## Krok 5 — Převeďte ho do týdenní priority (5 minut)
 
-Podívejte se na skutečný týden: pevné body, energii a závazky. Priorita nepřidá čas. Co se vejde vedle toho, co už platí? Záměr z kroku 4 zůstává stejný; týdenní priorita jen rozhoduje, co z něj dostane kapacitu.
+Podívejte se na skutečný týden: pevné body, energii a závazky. Priorita nepřidá čas. Co se vejde vedle toho, co už platí? Záměr z kroku 4 zůstává stejný; týdenní priorita rozhoduje, čemu dát přednost, a alokace teprve vyčleňuje konkrétní čas nebo energii.
 
 Janin týden: ve čtvrtek vozí dceru na plavání a matce slíbila nákup, v práci má uzávěrku do pátku. Volný je středeční večer a sobotní dopoledne.
 
@@ -71,7 +71,7 @@ flowchart TD
     subgraph TAKT["Taktický horizont — co teď unesu"]
         direction TB
         C["Zamýšlený výsledek<br/>jakou změnu chci uskutečnit"]
-        P["Týdenní priorita<br/>co dostane omezenou kapacitu"]
+        P["Týdenní priorita<br/>čemu dát přednost při výběru"]
         C --> P
     end
     subgraph OPER["Operativní horizont — co udělám"]

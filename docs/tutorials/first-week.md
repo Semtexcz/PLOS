@@ -48,7 +48,7 @@ Petr odpovídá: rozpočet má termín a dopad na tým, nákup na matku, pohyb s
 
 ## Krok 4 — Zvolte týdenní záměr (5 minut)
 
-**Týdenní záměr** je kandidátní zamýšlený výsledek (Intended Outcome) pro tento týden: popis žádoucí změny a podle čeho poznáte, že nastala. Volba záměru ještě nerozhoduje, že dostane kapacitu; to je týdenní priorita až v kroku 5. Zvolte jeden nebo dva kandidáty. Závazky se nevolí; ty platí.
+**Týdenní záměr** je kandidátní zamýšlený výsledek (Intended Outcome) pro tento týden: popis žádoucí změny a podle čeho poznáte, že nastala. Volba záměru ještě nerozhoduje, že dostane kapacitu; priorita jen rozhoduje o přednosti a alokaci ověříte v kroku 5. Zvolte jeden nebo dva kandidáty. Závazky se nevolí; ty platí.
 
 Petr si zapíše:
 
@@ -60,7 +60,7 @@ Pojmenujte, kdy nebo za jakých podmínek se k položce vrátíte.
 
 ## Krok 5 — Ověřte kapacitu (5 minut)
 
-Podívejte se na skutečný týden a svou kapacitu (Capacity). Kdy máte volný blok? Jak na tom budete s energií? Co už je pevné? Ověření kapacity je rozhodnutí o alokaci: týdenní priorita je to, co z kandidátních záměrů dostane omezený čas a energii.
+Podívejte se na skutečný týden a svou kapacitu (Capacity). Kdy máte volný blok? Jak na tom budete s energií? Co už je pevné? Ověření kapacity vede k rozhodnutí o alokaci: vyčleňujete konkrétní zdroj záměru s vymezeným nárokem. Priorita sama kapacitu nezaručí.
 
 Petr zjistí: v pondělí a v úterý večer má málo energie. Středa a čtvrtek jsou volné večery, sobota a neděle dopoledne volné.
 

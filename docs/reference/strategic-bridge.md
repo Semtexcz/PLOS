@@ -22,8 +22,8 @@ Reflexe je společná ([SS-06](../../03-architecture/conceptual-architecture.md#
 | Vize | revidovatelná představa žádoucího stavu | obraz budoucnosti, ne plán |
 | Strategie | volba cesty včetně toho, čemu se nevěnuji, s předpoklady | kandidátní cíle a experimenty |
 | Projekt nebo experiment | organizace práce, nebo ověření otázky s mezí ukončení | další kroky; poznatek může cestu potvrdit, změnit i nechat otevřenou |
-| Cíl a zamýšlený výsledek | konkrétní změna s horizontem a způsobem posouzení | nárok na kapacitu; týdenní priorita rozhodne, který záměr ji dostane |
-| Týdenní priorita | co dostane omezenou kapacitu vedle závazků | další krok a pojmenované odklady |
+| Cíl a zamýšlený výsledek | konkrétní změna s horizontem a způsobem posouzení | zdrojový nárok; priorita rozhodne o přednosti při výběru |
+| Týdenní priorita | čemu dát přednost při výběru práce vedle závazků | alokace ověřená proti kapacitě, další krok a pojmenované odklady |
 | Další krok | konkrétní jednání s časem nebo podmínkou | provedení, nebo vědomá volba nejednat |
 
 Dokončení práce nedokládá zamýšlený výsledek ([INV-05](../../03-architecture/preliminary-domain-model.md#katalog-invariantů)).
@@ -37,7 +37,7 @@ Vstupem je pozorování a dosavadní volba; výstupem rozhodnutí s důvodem a p
 | Hodnota → vize | Jak by vypadal běžný týden, kdybych žil podle hodnoty? | věta o žádoucí budoucnosti |
 | Vize → strategie | Která cesta hodnotu podporuje a co kvůli ní vylučuji? | zvolená cesta nebo alternativy |
 | Strategie → výsledek | Jakou změnu a do kdy poznám? | jeden zamýšlený výsledek s posouzením |
-| Výsledek → priorita | Co se vejde vedle závazků a co odložím s podmínkou? | jedna nebo dvě týdenní priority |
+| Výsledek → priorita | Čemu dát přednost vedle závazků a co odložím s podmínkou? | jedna nebo dvě týdenní priority; alokace se ověřuje zvlášť |
 | Priorita → krok | Jaká činnost začne a kdy? | další krok |
 
 Při volbě alternativ se ptejte: Podporuje cesta hodnotu? Co vylučuje? Jak velký omyl unesu? Odpovědi jsou kvalitativní, bez bodování. Při nejistotě volte menší krok.
@@ -78,7 +78,7 @@ Každá činnost nemusí být trasovatelná ke strategickému cíli. Trasovateln
 - Nejde o bodovací model; rozhodnutí zůstávají kvalitativní a vratná.
 - Dvanáct týdnů je jedna z možných délek horizontu, ne norma.
 - Návaznost nezakládá nový formulář, evidenci, aplikaci ani softwarovou komponentu.
-- [Tutorial prvního týdne](../tutorials/first-week.md) i tato reference používají oba pojmy ve stejném smyslu: týdenní záměr je kandidátní zamýšlený výsledek; teprve týdenní priorita rozhoduje o alokaci kapacity.
+- [Tutorial prvního týdne](../tutorials/first-week.md) i tato reference používají oba pojmy ve stejném smyslu: týdenní záměr je kandidátní zamýšlený výsledek, týdenní priorita rozhoduje o přednosti při výběru a alokace vyčleňuje konkrétní zdroj. Ani priorita, ani alokace nezakládají nový závazek.
 - Otevřené: spouštěče revizí ([OQ-02](../../05-decisions/open-questions.md#otevřené-otázky)), hloubka záznamu ([OQ-03](../../05-decisions/open-questions.md#otevřené-otázky)).
 
 ## Autoritativní zdroje
