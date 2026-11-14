@@ -12,8 +12,10 @@
 | P6 | Separation of Concerns | Oddělit volbu směru, výběr portfolia, alokaci a zpracování závazků | Dva procesy mění tutéž věc bez koordinace |
 | P7 | Traceability | Přiměřená návaznost důležitých záměrů; legitimní nestrategická operativa | Rutina potřebuje fiktivní strategický cíl |
 | P8 | Minimal Sufficient Complexity | Koncept existuje jen při samostatné rozhodovací hodnotě | Evidence existuje jen kvůli evidenci |
-| P9 | Technology Independence | Pojmy a rozhraní mají smysl bez aplikace | Pole nebo API určuje význam konceptu |
+| P9 | Technology Independence | Pojmy a rozhraní mají smysl bez jakékoli nynější či budoucí softwarové implementace; člověk postupy vykoná samostatně | Pole nebo API určuje význam konceptu |
 | P10 | Graceful Degradation | Omezený režim a návrat bez administrativního dluhu | Nejprve je nutné doplnit všechny záznamy |
 | P11 | Observability without Overmeasurement | Pozorování může být slovní, neúplné a volitelné podle rozhodnutí | Počet úkolů je zaměněn za kvalitu života |
 
 Při konfliktu se nejprve vyjasní dotčená potřeba a důsledek. Autonomii nelze převést na váhu v optimalizačním vzorci. Kapacitní limit nelze obejít vyšší prioritou. Nárok na trasovatelnost musí být přiměřený významu rozhodnutí a dostupné kapacitě. Konkrétní pravidla tohoto vyvažování zůstávají návrhovými rozhodnutími ADR-02, ADR-04 a ADR-05.
+
+**Upřesnění I2 (ADR-07):** evidence je oddělena od média; nutný koncept nemusí být explicitně zaznamenán. P8–P11 nevynucují úplnost, nepřetržité sledování ani automatické vyhodnocení. Jde o interpretaci explicitního zadání, nikoli nový princip.

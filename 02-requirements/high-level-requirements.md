@@ -39,7 +39,7 @@
 
 | ID / stav | Omezení | Zdůvodnění / zdroj | Kritérium ověření | Alokace |
 | --- | --- | --- | --- | --- |
-| CON-01 / Z | Logická specifikace nesmí záviset na konkrétní aplikaci, jazyce, databázi, službě či UI. | SN-10; P9 | Každý UC lze vysvětlit bez technologického produktu; žádné rozhraní nepředepisuje API nebo úložiště. | Všechny SS, ST-05 |
+| CON-01 / Z | Metodika ani její logická specifikace nesmějí předpokládat softwarovou implementaci, databázi, API či automatizovaného agenta; musí být vykonatelné člověkem nezávisle na podpůrném médiu. | SN-10; P9; explicitní upřesnění SoI v zadání I2, ADR-07 | Každý UC lze vysvětlit bez technologického produktu; žádné rozhraní nepředepisuje API nebo úložiště. | Všechny SS, ST-05 |
 | CON-02 / Z | Iteration 1 musí zůstat u architektonických základů bez implementace a detailních algoritmů, stavů či personalizace. | SN-10; rozsah zadání §4 a §9 | Inspekce dodávky proti seznamu necílů charteru a roadmapě; pouze dokumentace a zdroje diagramů. | ST-05 |
 | CON-03 / Z | Integrace musí pokrýt všech šest frameworků a rozlišit jejich principy od návrhových adaptací PLOS. | SN-10; zadání §2 | Každý framework má doložený zdroj, roli, hranici a popsanou adaptaci; žádný claim o validaci celé kombinace. | ST-05, všechny SS |
 
@@ -50,3 +50,7 @@ Tabulky jsou primární maticí **SN / P → požadavek → SS → ověřovací 
 Schváleným mandátem jsou pouze explicitní položky Z a P1–P11. Při potvrzení N vlastníkem se zaznamená datum a podklad rozhodnutí; bez toho stav zůstává N. Hypotézy H-01 až H-05 ani ADR se nestávají požadavky přidáním slova „musí“. Otevřené hranice rozhodování a kritéria přijatelné režie viz [registr](../05-decisions/open-questions.md).
 
 V této iteraci byla provedena návrhová kontrola pokrytí, nikoli realizace nebo validace všech požadavků. Důkazy a zbylá omezení jsou v [review reportu](../07-review/architecture-review-report.md).
+
+## Dopad Iteration 2
+
+CON-01 / Z byl zpřesněn podle explicitního zadání I2 a ADR-07: nestačí nezávislost na konkrétním produktu, nesmí být předpokládán software vůbec. Původní CON-02 zůstává omezením historického rozsahu I1; rozsah I2 vymezuje zadání a DOM-01. Žádné FR/QR ve stavu N nebyly schváleny ani přidány jako závazné. [Review I2](../07-review/architecture-review-report-iteration-2.md) uvádí dopady a návrhy doplnění ověřovacích kritérií pro I3; invarianty DOM-01 mají stav D.

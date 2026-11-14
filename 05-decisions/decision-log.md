@@ -1,6 +1,6 @@
 # Architecture Decision Log
 
-**Stav všech ADR:** D — přijato autorem pro návrh v0.1 dne 2026-11-14 v rámci zadání. Doporučení vlastníkovi k revizi, nikoli tvrzení o jeho dodatečném schválení. Rozhodnutí lze změnit novým ADR s odkazem na nahrazený záznam. Otevřené hypotézy nejsou potichu povýšeny na mandát.
+**Stav ADR-01 až ADR-06:** D — přijato autorem pro návrh v0.1 dne 2026-11-14 v rámci zadání. ADR-07 až ADR-11 jsou rozhodnutí pro v0.2 se stavem u každého záznamu. ADR-11 částečně nahrazuje notační část ADR-06; ostatní rozhodnutí I1 zůstávají platná. Doporučení vlastníkovi k revizi, nikoli tvrzení o jeho dodatečném schválení. Rozhodnutí lze změnit novým ADR s odkazem na nahrazený záznam. Otevřené hypotézy nejsou potichu povýšeny na mandát.
 
 ## ADR-01 — Hybridní architektura funkčních odpovědností
 
@@ -37,3 +37,41 @@
 **Kontext:** I1 má umožnit další modelování bez implementace a falešné formálnosti. **Alternativy:** plný SysML může později zlepšit formální model, ale vyžaduje konkrétní verzi, nástroje a ověření; samotná próza má malou bariéru, ale skrývá vazby; databázový model by předčasně uzamkl významy.
 
 **Rozhodnutí:** Markdown jako referenční dokumentace, šest lokálních Mermaid flowchartů s explicitní sémantikou hran. Pojmy definovat v jednom slovníku, doménové vztahy v DOM-01. Diagramy nejsou UML třídní model ani SysML a nevyjadřují kardinality. **Důsledky:** nelze z nich odvozovat strojový důkaz konzistence, simulaci nebo kód. Syntax a sémantika se ověřují odděleně; provedené kontroly se uvedou pravdivě. **Revize:** I2/I4 podle potřeby přesnějšího jazyka. Vazba: CON-01/02, QR-07.
+
+## ADR-07 — Metodika bez předpokladu implementace a povinných záznamů
+
+**Stav:** D pro v0.2, 2026-11-14; vychází z explicitního upřesnění SoI v zadání I2. **Kontext:** CH-01 zmiňoval informační záznamy jako součást SoI a „budoucí software“; ASM-03 mohl působit jako univerzální podmínka. P9 už technologickou nezávislost vyžaduje.
+
+**Alternativy:** ponechat formulaci s rizikem implementačního výkladu; předefinovat celou architekturu; minimálně upřesnit hranici a oddělit význam evidence od média. **Rozhodnutí:** třetí možnost. PLOS je samostatně člověkem vykonatelná metodika i bez jakéhokoli softwaru nyní či v budoucnu; konceptuální nezbytnost nezakládá povinné záznamy. **Dopady:** malé změny CH-01, P9 a CON-01; ASM-03 platí podmíněně pro kontinuitu explicitních záznamů, nikoli existenci metodiky. Nevznikají nové funkční požadavky, SS ani provozní formy. **Vazby:** ADR-01/05/06, INV-01, UC-04/08. **Revize:** pouze novým zadáním měnícím SoI; volba média sama rozhodnutí neruší.
+
+## ADR-08 — Oddělené významy výsledku, práce a odpovědnosti
+
+**Stav:** D pro v0.2, 2026-11-14. **Kontext:** Outcome v GLO-01/DG-06 v0.1 rozlišoval zamýšlené a pozorované použití slovně, ale neměl hranici identity; OQ-04. **Alternativy:** jedna identita Outcome měnící se z očekávání na skutečnost (riziko přepsání reference); dvě nezávislé evidence výsledků (duplicitní pozorování); oddělený obsah Intended Outcome a role Observation pro Observed Outcome.
+
+**Rozhodnutí:** třetí varianta. Intended Outcome je samostatný sémantický koncept bez autonomní identity; Observed Outcome nese identitu původního Observation. Interpretace dosažení či příčiny patří do Review. Objective, Project, Commitment a Next Action mají vlastní významovou kontinuitu podle DOM-01; jejich vazby jsou referenční a dovolují mnoho–mnoho. Žádná hierarchie není univerzálně povinná.
+
+**Dopady:** nahrazuje neúplné rozlišení Outcome v DOM-01/GLO-01/DG-06 v0.1, zachovává ADR-02/03/05. Outcome zůstává pouze aliasem rodiny významů. Změna strategie nezruší závazek; přejednání a rozpoznání skutečného zániku nejsou totéž. Klasifikace Core nevyžaduje explicitní evidenci. **Vazby:** INV-03 až INV-10/18, SV-01/02/05/06/09, FR-10/11 a QR-06 zůstávají N. **Revize:** pokud se objeví případ, kde role Observation nedokáže odlišit pozorování a výklad bez ztráty původu. OQ-04 uzavřena pro konceptuální identitu, stavy zůstávají I5.
+
+## ADR-09 — Zdrojový nárok jako význam, nikoli další pracovní objekt
+
+**Stav:** D pro v0.2, 2026-11-14. **Kontext:** ADR-02/04 požadují společné posouzení bez dvojího započtení; v0.1 nechal pojem nárok neformální. **Alternativy:** sčítat odhady všech projektů a kroků (duplicity); vést nezávislé entity nároků s povinným úplným rozkladem (režie a implementační tlak); rozlišit Resource Demand podle rozsahu práce, zdroje, horizontu a kontextu bez nové identity práce.
+
+**Rozhodnutí:** třetí možnost; souhrn a zahrnuté části nejsou nezávislé sčítance. Shodné nároky, částečné překryvy, alternativní plány a skutečné konflikty se rozlišují. Nejasný překryv zůstává nejistý. Planned/Actual Capacity jsou role posouzení dostupnosti; spotřeba je předmět Observation, nikoli Actual Capacity.
+
+**Dopady:** zpřesnění DR-29 až DR-35 a INV-11 až INV-16; nárok je nově pojmenován v GLO-01, nikoli nově zavedená povinná evidence. Ani kvalita života, ani energie se nemění na univerzální skóre. **Vazby:** ADR-02/04, SV-03/08/10/11, FR-04 a QR-03. **Revize:** konkrétní protipříklad neřešeného překryvu; numerická či rozhodovací pravidla až I6. H-02 zůstává neověřena.
+
+## ADR-10 — WOOP pomocí významových rolí a experiment bez povinného projektu
+
+**Stav:** D pro v0.2, 2026-11-14. **Kontext:** FW-01 správně neztotožňuje if–then s WOOP; chybí svázání čtyř rolí. OQ-06 nevymezuje hranici Experiment/Project. **Alternativy WOOP:** čtyři nové samostatné objekty; pouze Conditional Response; existující koncepty s přesně vymezenými rolemi. **Alternativy experimentu:** povinný projekt; práh podle počtu kroků; rozlišovat poznávací záměr a organizační potřebu.
+
+**Rozhodnutí:** WOOP využije záměr v roli Wish, jeho Intended Outcome, Observation/Assumption v roli Internal Obstacle a odpovídající Conditional Response. External Constraint je odlišná role; ne každé omezení je kapacitní. Nový objekt WOOP ani povinný strategický cíl nevzniká. Experiment se může realizovat přes jeden či několik Next Action. Project je účelný, pokud je potřeba samostatně koordinovat ohraničenou práci; Experiment ani Project není podtyp druhého. Nerozhodný poznatek je přípustný.
+
+**Dopady:** pouze upřesnění rolí DC-34/35 a vazeb v DOM-01; nepřidává celý proces WOOP ani katalog překážek. OQ-06 uzavřena sémanticky, individuální únosnost rozkladu zůstává OQ-03. **Vazby:** ADR-02/05/08, INV-09/17, UC-01, SV-05/12, FR-02/14 zůstávají N. **Revize:** případ vyžadující další identitu, který nelze vyjádřit existujícími rolemi; behaviorální úplnost až I5.
+
+## ADR-11 — Konceptuální UML pohledy s explicitní sémantikou
+
+**Stav:** D pro v0.2, 2026-11-14. **Kontext:** zpřesnění vztahů a několika nutných násobností přesahuje významové flowcharty I1. **Alternativy:** ponechat DG-06 flowchart (slabé rozlišení násobností); úplný SysML/UML model s nástrojovým úložištěm (neodůvodněná režie); omezená notace UML tříd a asociací ve zdrojových Mermaid blocích.
+
+**Rozhodnutí:** třetí varianta. DG-06 je celkový pohled, DG-07 až DG-10 detaily čtyř skupin. Nepoužívá se dědičnost ani kompozice pro role či reference. GLO-01 drží definice, DOM-01 vztahy a invarianty; diagramy jsou navazující pohledy, ne další zdroj pravidel.
+
+**Dopady:** částečně nahrazuje ADR-06 pouze v rozhodnutí o flowchart notaci DG-06 a počtu diagramů; DG-01 až DG-05 a ostatní pravidla ADR-06 platí. Parser/render a sémantická kontrola se vykazují odděleně. **Vazby:** QG-03/08, RV-05, OQ-08. OQ-08 je vyřešena pro doménové pohledy I2, potřeba další notace v I4 zůstává otevřená. **Revize:** pokud potřebné vztahy nelze přesně vyjádřit v této podmnožině nebo dostupné renderery brání použitelnosti.

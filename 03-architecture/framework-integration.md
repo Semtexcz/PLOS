@@ -30,3 +30,7 @@ Poznámka k dostupnosti: u 12 Week Year byly dostupné indexované výňatky ofi
 Doporučená dělba GTD–Kanban–12 Week Year: **GTD pomáhá vyjasnit, co existuje a co znamená další krok; Kanban pomáhá vidět a omezit souběh; 12 Week Year inspiruje návaznost vybraných cílů a pravidelného plánování.** Společné kapacitní posouzení a pravidla konfliktu jsou návrhem PLOS, nikoli tvrzením původních autorů o této kombinaci.
 
 Metody jsou prostředky funkcí, ne povinných šest subsystémů nebo šest samostatných evidencí. [DG-03](../04-diagrams/README.md#dg-03) je mapa příspěvků, nikoli tabulka plné implementace jednotlivých metod. Empirické přínosy této integrace zůstávají H-01 až H-05.
+
+## Sémantická kontrola WOOP v Iteration 2
+
+[DOM-01](preliminary-domain-model.md) mapuje Wish, Outcome, Obstacle a Plan na existující záměr, Intended Outcome, roli Internal Obstacle a Conditional Response. External Constraint je oddělená role. ADR-10 nevytváří čtyři nové identity ani netvrdí, že if–then nebo samotné mapování uskutečňuje celou praxi WOOP. Oficiální Practice a Written WOOP Guide byly v I2 znovu otevřeny 2026-11-14; průchod SV-12 je návrhová sémantická kontrola, nikoli test účinnosti frameworku.

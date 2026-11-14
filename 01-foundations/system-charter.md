@@ -1,6 +1,6 @@
 # System Charter
 
-**ID:** CH-01 • **Stav:** návrh v0.1; normativní původ rozlišuje [README](../README.md).
+**ID:** CH-01 • **Stav:** návrh v0.2, minimální upřesnění SoI v I2 (ADR-07); normativní původ rozlišuje [README](../README.md).
 
 ## Problém, mise a účel
 
@@ -10,7 +10,7 @@
 
 ## System-of-Interest a hranice
 
-**System-of-Interest (SoI):** PLOS jako soustava pravidel, pojmů, informačních záznamů a člověkem vykonávaných řídicích praktik. Zahrnuje rozpoznání potřeb, přípravu voleb, plánování, sledování závazků a vyhodnocování zkušeností. Nezahrnuje celý život člověka.
+**System-of-Interest (SoI):** PLOS jako soustava pravidel, pojmů, dostupných podkladů poznání a člověkem vykonávaných řídicích praktik. Zahrnuje rozpoznání potřeb, přípravu voleb, plánování, sledování závazků a vyhodnocování zkušeností. Nezahrnuje celý život člověka.
 
 Člověk je vůči metodice externí rozhodovací autoritou a zároveň vykonavatelem jejích praktik. Tato dvojí role je záměrná: funkce patří do metodiky, člověk jako osoba se nestává její komponentou. Samotná životní činnost a její následky probíhají mimo hranici SoI. Subsystém Execution & Commitment Management organizuje jednání a zachycuje jeho stav; nevykonává život za člověka.
 
@@ -22,7 +22,7 @@
 | Posouzení kapacity a alokací | Odhady, subjektivní pozorování a zpětná vazba | Fyzická dostupnost zdrojů a skutečné jednání |
 | Reflexe, návrhy změn a kontinuita záznamů | Zkušenost a pozorované výsledky | Nepředvídatelné události, společenské a přírodní podmínky |
 
-Budoucí software by byl podpůrným prostředkem některých funkcí. Není SoI této iterace a nesmí být zaměněn za metodiku. Reference, kalendář nebo papír jsou možné nosiče informací, nikoli předepsané komponenty. PLOS neovládá jiné lidi a nezaručuje výsledky.
+PLOS nevyžaduje software nyní ani v budoucnu. Je samostatně vykonatelný člověkem; případné analogové, digitální či kombinované prostředky neurčují jeho doménovou sémantiku. Evidence je významový podklad oddělený od média a může existovat pouze v lidské paměti. Konceptuální nezbytnost neznamená povinný samostatný záznam. Reference, kalendář nebo papír jsou možné nosiče informací, nikoli předepsané komponenty. PLOS neovládá jiné lidi a nezaručuje výsledky.
 
 ## Stakeholdeři a aktéři
 
@@ -50,7 +50,7 @@ Jedna osoba pracuje s proměnlivým časem, energií, financemi, pozorností a z
 | Učit se a měnit plány bez morálního hodnocení člověka | Léčit, diagnostikovat nebo nahradit odbornou péči |
 | Fungovat i s omezenou kapacitou a po přerušení | Povinně dokončit resty před návratem |
 
-Necíle Iteration 1: software, UI, technologie, datové schéma, úplná procesní a stavová specifikace, číselné optimalizační algoritmy, definitivní metriky a personalizace podle skutečného života uživatele.
+Necíle Iteration 1 a 2: software, UI, technologie, datové schéma, úplná procesní a stavová specifikace, číselné optimalizační algoritmy, definitivní metriky a personalizace podle skutečného života uživatele.
 
 ## Předpoklady a omezení
 
@@ -58,7 +58,7 @@ Necíle Iteration 1: software, UI, technologie, datové schéma, úplná procesn
 | --- | --- | --- |
 | ASM-01 | Uživatel chce alespoň někdy vědomě reflektovat své volby | Metodiku lze odložit; nelze vynucovat adopci ani tvrdit účinek |
 | ASM-02 | Lze získat alespoň hrubou informaci o kapacitě a kritických závazcích | Pracovat s „neznámé“, omezit nové plánované nároky; H-02 |
-| ASM-03 | Existuje dostupný způsob uchování několika důležitých záznamů | Obnova může začít pouze aktuálními neodkladnými věcmi; historie nemusí být rekonstruovatelná |
+| ASM-03 | Pokud člověk potřebuje kontinuitu explicitních záznamů, má dostupný způsob jejich uchování; nejde o podmínku používání PLOS | Bez záznamů může orientace i obnova vycházet z aktuálního poznání; historie nemusí být rekonstruovatelná |
 | ASM-04 | O některých nárocích lze vyjednávat nebo je odkládat | Rozlišit ovlivnitelné a neovlivnitelné; přiznat neřešitelný konflikt, nikoli vyrábět kapacitu |
 | ASM-05 | Šest navržených funkcí lze vykonávat s únosnou režií | Zjednodušit formu a četnost; H-01 a R-01 |
 
@@ -76,3 +76,5 @@ Omezení jsou normativně evidována jako CON-01 až CON-03 v [požadavcích](..
 | SC-06 | Režie metodiky je pro uživatele přijatelná a nevytěsňuje regeneraci | UC-08 + budoucí kvalitativní validace; mez přijatelnosti zatím OQ-03 |
 
 Splnění dokumentačních quality gates není splněním SC-01 až SC-06 v reálném životě. Současný stav zachycuje [review report](../07-review/architecture-review-report.md). Kontext viz [DG-01](../04-diagrams/README.md#dg-01).
+
+**Změna I2:** ADR-07 zpřesňuje SoI a podmíněnost ASM-03 podle zadání. Mise, hranice skutečného jednání, role člověka a šest funkčních odpovědností se nemění. Konkrétní provozní forma není navržena.

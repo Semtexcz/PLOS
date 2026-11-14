@@ -1,80 +1,38 @@
-# DG-06 — Preliminary Domain Concept Diagram
+# DG-06 — Domain Architecture: celkový pohled
 
-**Účel:** ukázat reprezentativní významové vztahy hlavních konceptů. **Dokumentace:** [DOM-01](../03-architecture/preliminary-domain-model.md), [GLO-01](../glossary.md), [ADR-06](../05-decisions/decision-log.md#adr-06--lehký-konceptuální-model-a-textové-diagramy).
+**Verze:** 0.2 • **Notace:** konceptuální UML class diagram, textový zápis Mermaid `classDiagram`. **Účel:** propojit čtyři doménové skupiny bez povinného stromu strategie. Definice [GLO-01](../glossary.md), vztahy a invarianty [DOM-01](../03-architecture/preliminary-domain-model.md). Pravidla notace a validace: [index](README.md). ADR-11 nahrazuje původní flowchart DG-06; ID pohledu zůstává.
+
+Třídy zde klasifikují významy, nikoli programové objekty. Asociace se šipkou je navigovatelná ve směru čtení popisku, ne tok práce. Obě násobnosti jsou explicitní; číslo u konce říká počet instancí na tomto konci pro jednu instanci na opačném. Všechny asociace jsou referenční, žádná kompozice. Celkový pohled ukazuje hlavní spojení; úplný katalog včetně volitelných a odvozených konceptů je DOM-01, detailní pohledy DG-07 až DG-10.
 
 ## Zdrojová definice
 
 ```mermaid
-flowchart TB
-    subgraph orientation["Orientace a cesty"]
-        value["Value"]
-        vision["Vision"]
-        scenario["Scenario"]
-        strategy["Strategy"]
-        assumption["Assumption"]
-        experiment["Experiment"]
-        value -->|"orientuje"| vision
-        vision -->|"inspiruje alternativy"| scenario
-        scenario -->|"informuje"| strategy
-        strategy -->|"opírá se o"| assumption
-        experiment -->|"zkoumá"| assumption
-    end
-    subgraph selection["Změna a výběr"]
-        objective["Objective"]
-        outcome["Outcome: zamýšlený nebo pozorovaný"]
-        portfolio["Portfolio"]
-        project["Project"]
-        objective -->|"vyjadřuje zamýšlený"| outcome
-        portfolio -->|"posuzuje a vybírá"| objective
-        portfolio -->|"posuzuje a vybírá"| project
-        project -->|"může přispívat"| objective
-    end
-    subgraph operation["Péče, odpovědnost a provádění"]
-        area["Life Area"]
-        care["Care Need"]
-        input["Captured Input"]
-        commitment["Commitment"]
-        routine["Routine"]
-        action["Next Action"]
-        area -->|"dává kontext"| care
-        care -->|"může být zajišťována"| routine
-        input -->|"může být vyjasněn jako"| commitment
-        commitment -->|"může být naplňován"| action
-        commitment -->|"může být naplňován"| routine
-        routine -->|"může vést k aktuálnímu"| action
-    end
-    subgraph feasibility["Proveditelnost a učení"]
-        capacity["Capacity"]
-        plan["Plan"]
-        allocation["Allocation"]
-        observation["Observation"]
-        metric["Metric"]
-        review["Review"]
-        decision["Decision člověka"]
-        capacity -->|"omezuje proveditelnost"| allocation
-        plan -->|"uspořádává"| allocation
-        metric -->|"volitelně strukturuje sběr"| observation
-        review -->|"interpretuje"| observation
-        review -->|"připravuje podklady pro"| decision
-    end
-    strategy -->|"zdůvodňuje"| objective
-    portfolio -->|"posuzuje a vybírá"| experiment
-    portfolio -->|"zohledňuje nárok"| commitment
-    portfolio -->|"zohledňuje nárok"| care
-    experiment -->|"lze provést prostřednictvím"| action
-    commitment -->|"může být naplňován"| project
-    project -->|"upřesňuje nejbližší"| action
-    allocation -->|"vyčleňuje zdroj pro"| action
-    observation -->|"dokládá pozorovaný"| outcome
-    observation -->|"dokládá zkušenost s"| capacity
-    decision -->|"může revidovat"| strategy
-    decision -->|"může revidovat"| plan
+classDiagram
+    direction TB
+    Value "0..*" --> "0..*" Vision : DR-15 orientuje
+    Vision "0..*" --> "0..*" Scenario : DR-16 inspiruje
+    Scenario "0..*" --> "0..*" Strategy : DR-17 informuje
+    Strategy "0..*" --> "0..*" Objective : DR-19 zduvodnuje
+    Objective "0..*" --> "1..*" IntendedOutcome : DR-01 vyjadruje
+    Project "0..*" --> "0..*" Objective : DR-02 prispiva
+    Commitment "0..*" --> "0..*" Project : DR-03 naplnovan pres
+    Project "0..*" --> "0..*" NextAction : DR-04 rozpracovava
+    CareNeed "0..*" --> "0..*" Routine : DR-11 zajistovana pres
+    Routine "0..*" --> "0..*" NextAction : DR-12 konkretizuje
+    Experiment "0..*" --> "0..*" NextAction : DR-21 provaden pres
+    Experiment "0..*" --> "0..*" Observation : DR-22 ziskava
+    Observation "0..*" --> "0..*" IntendedOutcome : DR-09 relevantni pro
+    Review "0..*" --> "0..*" Observation : DR-23 posuzuje
+    Review "0..*" --> "0..*" Decision : DR-26 podklady pro
+    Decision "0..*" --> "0..*" Plan : DR-27 reviduje
+    Plan "0..*" --> "0..*" Allocation : DR-30 usporadava
+    Allocation "0..*" --> "1" ResourceDemand : DR-31 vyclenuje pro
+    NextAction "0..*" --> "0..*" ResourceDemand : DR-29 vyvolava
+    Capacity "0..*" --> "0..*" Allocation : DR-32 omezuje
 ```
 
-## Prvky a vztahy
+## Výklad a omezení
 
-Uzly jsou pojmy, nikoli třídy nebo tabulky. Šipky se čtou podle popisků a nejsou časovým tokem. „Může“ znamená přípustnou vazbu, nikoli povinnost nebo stanovenou kardinalitu. Outcome je zobrazen jedním konceptem s rozlišeným použitím, ne sloučením očekávání a evidence. Základní rozdíly rozvádí DOM-01.
+Cesta Project → Objective není povinná. Care Need, Routine a Commitment mají samostatnou legitimitu. Stejný Next Action i nárok se může objevovat ve více pohledech se zachovanou identitou. Intended Outcome je obsah bez samostatné kontinuity; Observed Outcome je role Observation (není zakreslen jako další nezávislá třída). Násobnost 1..* u Intended Outcome vyjadřuje významovou nutnost obsahu cíle, nikoli počet povinných záznamů. Neúplně známé vazby se neposuzují jako prokázaná nula.
 
-## Předpoklady a omezení
-
-Kvůli čitelnosti nejsou zakresleny Personal Principle a Conditional Response ani všechny vazby alokací, experimentů a rozhodnutí; jsou popsány v DOM-01. Habit a Output jsou rozlišovací pojmy bez povinné samostatné evidence. Neexistuje předpoklad, že každý krok má cíl nebo projekt. Kardinality, detailní invarianty, atributy a stavy tento model nezachycuje.
+Invariance a podmínky, které UML asociace nevyjadřují (zejména INV-04/05/06/14/15), platí podle DOM-01. Nejde o spustitelný model, databázové schéma, úplný UML metamodel ani strojový důkaz konzistence.

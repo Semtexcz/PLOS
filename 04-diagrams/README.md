@@ -1,31 +1,51 @@
 # Architecture Diagrams
 
-Všechny modely mají stav **D — konceptuální návrh v0.1**. Zdrojový blok `mermaid` v příslušném dokumentu je jediná autoritativní textová definice daného diagramu. Lze jej zobrazit v prostředí podporujícím Mermaid; render není samostatným zdrojem pravdy.
+**Stav:** D — DG-01 až DG-05 jsou funkční baseline v0.1 zkontrolovaná v I2; DG-06 až DG-10 jsou doménové pohledy v0.2. Autoritativním zdrojem diagramu je blok `mermaid` v příslušném Markdown souboru. Definice pojmů jsou v GLO-01, vztahy/násobnosti/invarianty v DOM-01. Render není další zdroj pravdy.
 
-Používáme Mermaid `flowchart`, protože v I1 potřebujeme kontext, odpovědnosti, toky a významové vztahy. Nejde o SysML, UML diagram tříd, procesní exekuční model, ERD nebo databázové schéma. Směr šipky má význam uvedený u každého pohledu; mezi pohledy jej nelze automaticky přenášet. Rámeček seskupuje, nevyjadřuje dědičnost nebo vlastnictví osoby systémem.
+DG-01 až DG-05 používají Mermaid `flowchart`, nejsou UML/SysML. DG-06 až DG-10 používají konceptuální **UML class diagrams** v podmnožině notace Mermaid `classDiagram`: třídy, směrované asociace a násobnosti. Směr je navigace/čtení pojmenovaného vztahu; nevyjadřuje čas, řízení nebo příčinu. Násobnost u konce označuje počet instancí tohoto konce pro jednu instanci protějšího. `0..*` znamená volitelnou vazbu bez obecného horního limitu, `1` právě jeden významový referent, `1..*` alespoň jeden. Nejde o povinné řádky záznamů.
+
+Třída zde pojmenovává koncept, nikoli aplikaci, tabulku nebo povinnou samostatnou identitu. Obsahové a odvozené koncepty mají identitu podle DOM-01; role nejsou kresleny jako nezávislé podtřídy. Modely nepoužívají neodůvodněnou kompozici nebo dědičnost. Pro přesné varianty vztahů platí DR-ID. Omezení typu „otázka NEBO předpoklad“ a zákazy dvojího započtení jsou v textových INV, nikoli vymyšlené UML symboly. Zápis asociací byl porovnán s [oficiální dokumentací Mermaid classDiagram](https://mermaid.js.org/syntax/classDiagram.html); to samo není parserová validace.
 
 ## DG-01
 
-[System Context Diagram](DG-01-system-context.md) — hranice metodiky, člověka, okolí a skutečného jednání. Dokumentace: CH-01.
+[System Context](DG-01-system-context.md) — metodika, člověk, skutečné jednání a okolí; CH-01.
 
 ## DG-02
 
-[High-Level Functional Architecture](DG-02-functional-architecture.md) — rozdělení šesti odpovědností a jejich hlavní spolupráce. Dokumentace: ARCH-01.
+[Functional Architecture](DG-02-functional-architecture.md) — šest funkčních odpovědností; ARCH-01.
 
 ## DG-03
 
-[Framework Responsibility Map](DG-03-framework-responsibilities.md) — příspěvek šesti frameworků funkcím PLOS, bez zaměnění metod za subsystémy. Dokumentace: FW-01.
+[Framework Responsibility Map](DG-03-framework-responsibilities.md) — původ příspěvků šesti metod; FW-01.
 
 ## DG-04
 
-[Strategic-to-Operational Information Flow](DG-04-information-flow.md) — návaznost záměrů, samostatný vstup péče a povinností, kapacitní posouzení. Dokumentace: ARCH-01, DOM-01.
+[Information Flow](DG-04-information-flow.md) — strategická i nestrategická cesta k jednání; ARCH-01, DOM-01.
 
 ## DG-05
 
-[Feedback Control Architecture](DG-05-feedback-control.md) — uzavření informačních smyček přes interpretaci a lidské rozhodnutí. Dokumentace: ARCH-01, CO-01.
+[Feedback Control](DG-05-feedback-control.md) — horizonty reflexe a lidské rozhodování; ARCH-01, CO-01.
 
 ## DG-06
 
-[Preliminary Domain Concept Diagram](DG-06-domain-concepts.md) — reprezentativní významové vztahy bez kardinalit a atributů. Dokumentace: DOM-01, GLO-01.
+[Domain Architecture](DG-06-domain-concepts.md) — celkový propojující pohled, detailní vztahy následují. Nahrazuje předběžný flowchart v témže ID (ADR-11).
 
-**Validace:** zdroje byly ručně zkontrolovány proti dokumentaci a strukturálně kontrolovány na přítomnost ID, metadat a jednoho zdrojového bloku. Parser Mermaid ani renderer nebyly spuštěny. Syntaktická a vizuální správnost v konkrétní verzi rendereru nejsou strojově potvrzeny. Podrobnosti viz [review report](../07-review/architecture-review-report.md).
+## DG-07
+
+[Goals, Projects & Commitments](DG-07-goals-projects-commitments.md) — práce, odpovědnost a výsledky; DOM-01/C1.
+
+## DG-08
+
+[Care & Routines](DG-08-care-routines.md) — péče, opakování, provedení; DOM-01/C2.
+
+## DG-09
+
+[Strategy & Experiments](DG-09-strategy-experiments.md) — alternativy, pokusy, evidence a volby; DOM-01/C3.
+
+## DG-10
+
+[Capacity & Allocation](DG-10-capacity-allocation.md) — dostupnost, nárok, vyčlenění a překryv; DOM-01/C4.
+
+## Stav ověření
+
+Ruční sémantické porovnání DR, násobností a významu tříd s DOM-01 bylo provedeno pro všech pět doménových pohledů. Strukturální kontroly celého souboru dokumentace vykazuje [review I2](../07-review/architecture-review-report-iteration-2.md). **Úspěšná parserová a vizuální validace renderu nebyla provedena.** Dostupný lokální Mermaid bundle v Node skončil chybou DOM prostředí (`addHook is not a function`); místní Firefox nebylo možné spustit v omezeném prostředí (`unshare(CLONE_NEWPID): EPERM`, snap také vyžadoval zápis mimo povolený rozsah). Stažení CLI nebylo dostupné kvůli DNS (`EAI_AGAIN`). Zdrojové definice zůstávají čitelné v dokumentech. RV-05 zůstává otevřený; úspěšnost vykreslení ani vizuální čitelnost nejsou tvrzeny.

@@ -1,5 +1,7 @@
 # Architecture Handoff
 
+> Historický artefakt I1 / v0.1, ponechaný jako záznam tehdejšího předání. Aktuální výsledek je v [Iteration 2](architecture-handoff-iteration-2.md). Tehdejší otevřené položky a stop podmínka se čtou v historickém kontextu.
+
 **ID:** HANDOFF-01 • **Datum:** 2026-11-14 • **Předávaná verze:** 0.1 — Architecture Foundation, Iteration 1. **Stav:** návrh připravený k revizi vlastníkem; další iterace nebyla zahájena.
 
 ## Co je navrženo

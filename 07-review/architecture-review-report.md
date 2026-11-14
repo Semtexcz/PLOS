@@ -1,5 +1,7 @@
 # Architecture Review Report
 
+> Historický artefakt I1 / v0.1, ponechaný jako záznam tehdejšího předání. Aktuální výsledek je v [Iteration 2](architecture-review-report-iteration-2.md). Tehdejší otevřené položky a stop podmínka se čtou v historickém kontextu.
+
 **ID:** REV-01 • **Datum:** 2026-11-14 • **Předmět:** Architecture Foundation — Iteration 1, v0.1. **Typ:** self-review autora, nikoli nezávislý audit nebo uživatelská validace.
 
 **Verdikt:** architektonické základy jsou připravené k předání a k samostatně zadanému rozpracování domény. Nebyl identifikován otevřený Blocking problém pro rozsah I1. Otevřené Important položky omezují použití návrhu jako potvrzené specifikace nebo provozně validované metodiky. Celý PLOS není dokončen.

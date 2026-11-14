@@ -1,6 +1,6 @@
 # Conceptual Architecture
 
-**ID:** ARCH-01 • **Stav:** D — doporučená logická architektura v0.1. Konkrétní účinnost a únosnost jsou H-01 až H-05. Oporou jsou [požadavky](../02-requirements/high-level-requirements.md), [ADR](../05-decisions/decision-log.md) a [DG-02](../04-diagrams/README.md#dg-02).
+**ID:** ARCH-01 • **Stav:** D — doporučená logická architektura v0.1, zkontrolovaná vůči doméně v0.2; šest SS a IF zůstává baseline. Konkrétní účinnost a únosnost jsou H-01 až H-05. Oporou jsou [požadavky](../02-requirements/high-level-requirements.md), [ADR](../05-decisions/decision-log.md) a [DG-02](../04-diagrams/README.md#dg-02).
 
 ## Základní uspořádání
 
@@ -83,7 +83,7 @@ SS-03 vlastní portfoliový limit rozpracovanosti; SS-05 operativní přehled so
 
 Kapacita je kontextové omezení pro daný horizont, rozlišené podle zdroje. Čas či peníze mohou mít jednotky, energie může být pouze slovně popsaná. Odhadovaná dostupnost, pozorovaná dostupnost a skutečná spotřeba se nesmějí zaměnit. Nevyužitý čas nedokazuje, že byla dostupná energie.
 
-Allocation vyjadřuje zamýšlené použití zdroje, nikoli rezervaci garantovaného výsledku. Pro srovnatelné zdroje lze později ověřovat nároky vůči dostupnosti ve stejném horizontu a jednotce; mezi nesrovnatelnými zdroji se neprovádí součet. V I1 jde o sémantický závazek, ne o matematický model nebo algoritmus (ADR-04).
+Allocation vyjadřuje zamýšlené použití zdroje, nikoli rezervaci garantovaného výsledku. Pro srovnatelné zdroje lze později ověřovat nároky vůči dostupnosti ve stejném horizontu a jednotce; mezi nesrovnatelnými zdroji se neprovádí součet. V I2 tento závazek zpřesňuje DOM-01 (DR-29 až DR-35, INV-11 až INV-16, ADR-09); nejde o matematickou optimalizaci nebo algoritmus.
 
 Při konfliktu SS-04 ukazuje nesoulad a alternativy, SS-03 posuzuje výběr, SS-05 důsledky pro dohody. Člověk rozhodne o rozsahu, odkladu, přejednání, pomoci nebo přijetí nevyřešeného konfliktu. Samotná vyšší priorita kapacitu nevytvoří. Ochrana strategie spočívá ve viditelném rozhodnutí při jejím vytlačení a návratu tématu do review, nikoli v pevné procentní kvótě. Regenerace je legitimní potřeba; spontánní čas nemusí být evidován jako projekt.
 
@@ -112,3 +112,7 @@ Jde o kvalitativní model řízení s člověkem v rozhodovací smyčce. Život 
 | Review, interpretace evidence a záznam významného rozhodnutí | SS-06 | Všechny SS, člověk | Obsah rozhodnutí vykoná příslušný vlastník; SS-06 je nenařizuje |
 
 Podněty bez akce, externí povinnosti, péče, experimentování, konflikty, odklad i obnova mají přiřazenou funkci. Soukromí, delegace, detailní kritičnost a minimální rozsah záznamů nejsou dopracované; jsou explicitně ponechány v OQ-01, OQ-03 a OQ-07. CON-01 až CON-03 omezují všechny funkce.
+
+## Sémantická návaznost I2
+
+DOM-01/GLO-01 v0.2 jsou autoritou pro identitu a vztahy. Resource Demand vyjasňuje SS-04 z podkladů SS-05/SS-03; neznamená další pracovní objekt. Intended Outcome cíle patří SS-03, obsah očekávání péče či kroku příslušnému vlastníkovi záměru; Observed Outcome je role Observation, interpretaci drží SS-06. Pojmy „evidence“, „předání“ a „vlastník“ nepředepisují zápis ani strojové zpracování. Nevznikl rozpor vyžadující revizi ADR-01 nebo nová rozhraní; kontrakty IF zůstávají předmětem I4.
