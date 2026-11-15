@@ -42,7 +42,7 @@ Schopnost zde znamená žádoucí dovednost člověka a metodiky, nikoli kompone
 7. **Uzavřená zpětná vazba a adaptace.** Člověk umí porovnat zamýšlený výsledek s pozorováním, oddělit pozorování od interpretace a změnit další krok, taktiku nebo strategii.
 8. **Omezený režim a návrat po přerušení.** Člověk umí použít metodiku v minimální podobě a vrátit se k současnému stavu bez doplňování historie a bez administrativního dluhu.
 
-Žádná z těchto schopností nesmí být podmíněna softwarem, evidencí ani předchozím strategickým rozhodnutím. Nepokrytá schopnost je mezera v metodice, ne selhání člověka.
+Žádná schopnost nesmí vyžadovat konkrétní software ani povinnou evidenci. Základní každodenní používání PLOS, péče a správa závazků nesmějí vyžadovat předchozí strategické rozhodnutí. Strategické schopnosti se používají tam, kde je člověk potřebuje. Nepokrytá schopnost je mezera v metodice, ne selhání člověka.
 
 Seznam je kritérium úplnosti, nikoli tvrzení, že každá schopnost je dnes prakticky dotažená. Stav doložení patří do review zpráv, ne do tohoto dokumentu.
 
