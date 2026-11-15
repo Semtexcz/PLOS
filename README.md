@@ -6,6 +6,10 @@ PLOS (Personal Life Operating System) je technologicky nezávislá metodika, kte
 
 Návrh kombinuje hierarchii záměrů s distribuovanými funkčními odpovědnostmi a několika zpětnovazebními smyčkami. Šest subsystémů jsou pohledy na metodiku, nikoli aplikace, týmy nebo povinné oddělené evidence. Běžné závazky a péče o životní oblasti mají vlastní legitimitu vedle strategických změn.
 
+## Původní záměr projektu
+
+[PROJECT_INTENT.md](PROJECT_INTENT.md) je kanonický přehled původního záměru vlastníka: proč PLOS existuje, jaký výsledek sleduje, které schopnosti jsou nezbytné, co je výslovně mimo rozsah a podle čeho se pozná úspěch. Slouží jako kritérium při rozhodování o dalších iteracích. Není náhradou [System Charter](01-foundations/system-charter.md) ani doménové architektury: definice zůstávají ve [slovníku](glossary.md), vztahy v [doménovém modelu](03-architecture/preliminary-domain-model.md) a odpovědnosti v [konceptuální architektuře](03-architecture/conceptual-architecture.md). Záznam je zatím návrh ke schválení vlastníkem.
+
 ## Jak dokumentaci číst
 
 **Používáte PLOS, ne architekturu?** [Uživatelská dokumentace](docs/README.md) nabízí návrh provozního postupu: tutorial, denní rozhodování, týdenní plánování a provozní jádro.
